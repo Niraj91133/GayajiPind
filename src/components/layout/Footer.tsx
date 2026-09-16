@@ -36,6 +36,8 @@ export function Footer() {
             <p className="text-xs sm:text-sm text-[#D8D0C0] leading-relaxed mb-6 max-w-md">
               {language === "hi"
                 ? "गयाजीपिंड परिवारों को गया जी (बिहार) में पिंडदान, त्रिपिंडी श्राद्ध एवं नारायण बलि जैसे पवित्र अनुष्ठानों को प्रमाणित तीर्थ पुरोहितों एवं व्यक्तिगत सहायता के साथ संपन्न कराने में सहायता करता है।"
+                : language === "bn"
+                ? "গয়াজীপিণ্ড পরিবারবর্গকে গয়া জী (বিহার)-তে পিণ্ডদান, ত্রিপিন্ডী শ্রাদ্ধ ও নারায়ণ বলির মতো পবিত্র বৈদিক অনুষ্ঠান বিশ্বস্ত পুরোহিত ও ব্যক্তিগত সহায়তার মাধ্যমে সম্পন্ন করতে সাহায্য করে।"
                 : "GayajiPind is a traditional digital pilgrimage coordinator dedicated to helping families arrange sacred Pind Daan and ancestral rites in Gaya Ji, Bihar with verified Teerth Pandits and dedicated human coordinators."}
             </p>
 
@@ -44,13 +46,13 @@ export function Footer() {
                 <MapPin className="w-4 h-4 text-[#DFC07C] flex-shrink-0" />
                 <span>Vishnupad Temple Kshetra, Chandrachur Ghat, Gaya Ji, Bihar 823001</span>
               </div>
-              <div className="flex items-center gap-2">
+              <a href="tel:+919097327088" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Phone className="w-4 h-4 text-[#DFC07C] flex-shrink-0" />
-                <span>+91 94312 87650 (Coordinator Support)</span>
-              </div>
+                <span>+91 90973 27088 (Helpline & Coordinator)</span>
+              </a>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-[#DFC07C] flex-shrink-0" />
-                <span>care@gayajipind.com</span>
+                <span>care@gayajipindsewa.com</span>
               </div>
             </div>
           </div>
@@ -58,32 +60,32 @@ export function Footer() {
           {/* Col 2: Core Rituals */}
           <div>
             <h4 className="font-serif text-base font-semibold text-[#DFC07C] mb-4">
-              {language === "hi" ? "पवित्र अनुष्ठान" : "Sacred Rituals"}
+              {language === "hi" ? "पवित्र अनुष्ठान" : language === "bn" ? "পবিত্র অনুষ্ঠান" : "Sacred Rituals"}
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm text-[#D8D0C0]">
               <li>
                 <Link href="/rituals/1-day-pind-daan" className="hover:text-white transition-colors">
-                  1-Day Pind Daan
+                  {language === "hi" ? "1-दिवसीय पिंडदान" : language === "bn" ? "১-দিনের পিণ্ডদান" : "1-Day Pind Daan"}
                 </Link>
               </li>
               <li>
                 <Link href="/rituals/3-day-complete-pind-daan" className="hover:text-white transition-colors">
-                  3-Day Complete Pilgrimage
+                  {language === "hi" ? "3-दिवसीय सम्पूर्ण पिंडदान" : language === "bn" ? "৩-দিনের সম্পূর্ণ পিণ্ডদান" : "3-Day Complete Pilgrimage"}
                 </Link>
               </li>
               <li>
                 <Link href="/rituals/tripindi-shradh" className="hover:text-white transition-colors">
-                  Tripindi Shradh
+                  {language === "hi" ? "त्रिपिंडी श्राद्ध" : language === "bn" ? "ত্রিপিন্ডী শ্রাদ্ধ" : "Tripindi Shradh"}
                 </Link>
               </li>
               <li>
                 <Link href="/rituals/narayan-bali" className="hover:text-white transition-colors">
-                  Narayan Bali
+                  {language === "hi" ? "नारायण बलि" : language === "bn" ? "নারায়ণ বলি" : "Narayan Bali"}
                 </Link>
               </li>
               <li>
                 <Link href="/pind-daan" className="hover:text-white transition-colors">
-                  {language === "hi" ? "पिंडदान विधि एवं महत्व" : "Pind Daan Vidhi Guide"}
+                  {language === "hi" ? "पिंडदान विधि एवं महत्व" : language === "bn" ? "পিণ্ডদান বিধি ও গুরুত্ব" : "Pind Daan Vidhi Guide"}
                 </Link>
               </li>
             </ul>
@@ -92,37 +94,37 @@ export function Footer() {
           {/* Col 3: Gaya Ji Guide & Places */}
           <div>
             <h4 className="font-serif text-base font-semibold text-[#DFC07C] mb-4">
-              {language === "hi" ? "गया जी तीर्थ गाइड" : "Gaya Ji Guide"}
+              {language === "hi" ? "गया जी तीर्थ गाइड" : language === "bn" ? "গয়া তীর্থ গাইড" : "Gaya Ji Guide"}
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm text-[#D8D0C0]">
               <li>
                 <Link href="/guide/vishnupad" className="hover:text-white transition-colors">
-                  Vishnupad Mandir
+                  {language === "hi" ? "विष्णुपद मंदिर" : language === "bn" ? "বিষ্ণুপদ মন্দির" : "Vishnupad Mandir"}
                 </Link>
               </li>
               <li>
                 <Link href="/guide/falgu-river" className="hover:text-white transition-colors">
-                  Sacred Falgu River
+                  {language === "hi" ? "पवित्र फल्गु नदी" : language === "bn" ? "পবিত্র ফল্গু নদী" : "Sacred Falgu River"}
                 </Link>
               </li>
               <li>
                 <Link href="/guide/akshayavat" className="hover:text-white transition-colors">
-                  Akshayavat Vriksh
+                  {language === "hi" ? "अमर अक्षयवट वृक्ष" : language === "bn" ? "অমর অক্ষয়বট বৃক্ষ" : "Akshayavat Vriksh"}
                 </Link>
               </li>
               <li>
                 <Link href="/guide/pretshila" className="hover:text-white transition-colors">
-                  Pretshila Hill
+                  {language === "hi" ? "प्रेतशिला पर्वत" : language === "bn" ? "প্রেতশিলা পর্বত" : "Pretshila Hill"}
                 </Link>
               </li>
               <li>
                 <Link href="/guide/45-vedi" className="hover:text-[#DFC07C] font-medium transition-colors">
-                  45 Sacred Vedis Directory
+                  {language === "hi" ? "45 पवित्र वेदियों की सूची" : language === "bn" ? "৪৫টি পবিত্র বেদীর তালিকা" : "45 Sacred Vedis Directory"}
                 </Link>
               </li>
               <li>
                 <Link href="/guide/how-to-reach" className="hover:text-white transition-colors">
-                  How to Reach Gaya Ji
+                  {language === "hi" ? "गया जी कैसे पहुँचें" : language === "bn" ? "কীভাবে গয়া পৌঁছাবেন" : "How to Reach Gaya Ji"}
                 </Link>
               </li>
             </ul>
@@ -131,37 +133,37 @@ export function Footer() {
           {/* Col 4: Trust & Support */}
           <div>
             <h4 className="font-serif text-base font-semibold text-[#DFC07C] mb-4">
-              {language === "hi" ? "विश्वास एवं सहायता" : "Trust & Support"}
+              {language === "hi" ? "विश्वास एवं सहायता" : language === "bn" ? "বিশ্বাস ও সহায়তা" : "Trust & Support"}
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm text-[#D8D0C0]">
               <li>
                 <Link href="/pandits" className="hover:text-white transition-colors">
-                  {language === "hi" ? "प्रमाणित तीर्थ पुरोहित" : "Our Verified Pandits"}
+                  {language === "hi" ? "प्रमाणित तीर्थ पुरोहित" : language === "bn" ? "প্রমাণিত পুরোহিতমণ্ডলী" : "Our Verified Pandits"}
                 </Link>
               </li>
               <li>
                 <Link href="/trust" className="hover:text-white transition-colors">
-                  {language === "hi" ? "विश्वसनीयता एवं नीति" : "Trust & Transparency"}
+                  {language === "hi" ? "विश्वसनीयता एवं नीति" : language === "bn" ? "স্বচ্ছতা ও নিয়মাবলী" : "Trust & Transparency"}
                 </Link>
               </li>
               <li>
                 <Link href="/services/senior-assistance" className="hover:text-white transition-colors">
-                  {language === "hi" ? "वरिष्ठ नागरिक सेवा" : "Senior Citizen Assistance"}
+                  {language === "hi" ? "वरिष्ठ नागरिक सेवा" : language === "bn" ? "প্রবীণদের সহায়তা" : "Senior Citizen Assistance"}
                 </Link>
               </li>
               <li>
                 <Link href="/services/hotel-assistance" className="hover:text-white transition-colors">
-                  {language === "hi" ? "होटल समन्वय" : "Hotel Coordination"}
+                  {language === "hi" ? "होटल समन्वय" : language === "bn" ? "হোটেল ব্যবস্থা" : "Hotel Coordination"}
                 </Link>
               </li>
               <li>
                 <Link href="/services/travel-assistance" className="hover:text-white transition-colors">
-                  {language === "hi" ? "यात्रा एवं वाहन" : "Station/Airport Pickup"}
+                  {language === "hi" ? "यात्रा एवं वाहन" : language === "bn" ? "যাতায়াত ও গাড়ি সেবা" : "Station/Airport Pickup"}
                 </Link>
               </li>
               <li>
                 <Link href="/help" className="hover:text-white transition-colors">
-                  {language === "hi" ? "सहायता केंद्र" : "Help Center & FAQs"}
+                  {language === "hi" ? "सहायता केंद्र" : language === "bn" ? "সাহায্য ও প্রশ্নাবলী" : "Help Center & FAQs"}
                 </Link>
               </li>
             </ul>

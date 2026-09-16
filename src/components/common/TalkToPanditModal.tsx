@@ -27,9 +27,9 @@ export function TalkToPanditModal({ isOpen, onClose, defaultRitual = "General Gu
 
   const handleWhatsAppDirect = () => {
     const text = encodeURIComponent(
-      `Pranam. I need guidance regarding Gaya Ji Pind Daan rituals for my family. Name: ${fullName || "Devotee"}, City: ${city || "Not specified"}.`
+      `Pranam Pandit Ji. I need guidance regarding Gaya Ji Pind Daan rituals for my family. Name: ${fullName || "Devotee"}, City: ${city || "Not specified"}.`
     );
-    window.open(`https://wa.me/919431287650?text=${text}`, "_blank");
+    window.open(`https://wa.me/919097327088?text=${text}`, "_blank");
   };
 
   return (
@@ -54,11 +54,17 @@ export function TalkToPanditModal({ isOpen, onClose, defaultRitual = "General Gu
                 <CheckCircle2 className="w-8 h-8" />
               </div>
               <h3 className="text-2xl font-serif text-[#241812] font-bold mb-2">
-                {language === "hi" ? "अनुरोध प्राप्त हुआ" : "Callback Request Received"}
+                {language === "hi"
+                  ? "अनुरोध प्राप्त हुआ"
+                  : language === "bn"
+                  ? "অনুরোধ গৃহীত হয়েছে"
+                  : "Callback Request Received"}
               </h3>
               <p className="text-[#5C4D44] text-xs sm:text-sm leading-relaxed mb-6 max-w-sm mx-auto">
                 {language === "hi"
                   ? "हमारे वरिष्ठ तीर्थ पुरोहित / समन्वयक शीघ्र ही आपके नंबर पर संपर्क कर आपकी पारिवारिक परंपरा अनुसार मार्गदर्शन देंगे।"
+                  : language === "bn"
+                  ? "আমাদের প্রধান তীর্থ পুরোহিত / সমন্বয়ক শীঘ্রই আপনার সাথে যোগাযোগ করে পারিবারিক রীতি অনুযায়ী সম্পূর্ণ গাইড করবেন।"
                   : "Our senior Teerth Purohit / coordinator will call you directly to understand your family tradition and guide you."}
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -67,13 +73,19 @@ export function TalkToPanditModal({ isOpen, onClose, defaultRitual = "General Gu
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-full font-semibold text-xs uppercase tracking-wider shadow-sm hover:bg-[#20ba5a] transition-all"
                 >
                   <MessageCircle className="w-4 h-4" />
-                  <span>{language === "hi" ? "व्हाट्सएप पर बात करें" : "Chat on WhatsApp"}</span>
+                  <span>
+                    {language === "hi"
+                      ? "व्हाट्सएप पर बात करें"
+                      : language === "bn"
+                      ? "হোয়াটসঅ্যাপে কথা বলুন"
+                      : "Chat on WhatsApp"}
+                  </span>
                 </button>
                 <button
                   onClick={onClose}
                   className="px-6 py-3 bg-[#E8E2D5] text-[#241812] rounded-full font-semibold text-xs uppercase tracking-wider hover:bg-[#D8D0C0] transition-all"
                 >
-                  {language === "hi" ? "बंद करें" : "Close"}
+                  {language === "hi" ? "बंद करें" : language === "bn" ? "বন্ধ করুন" : "Close"}
                 </button>
               </div>
             </div>
@@ -81,14 +93,24 @@ export function TalkToPanditModal({ isOpen, onClose, defaultRitual = "General Gu
             <>
               <div className="mb-6">
                 <span className="text-[11px] font-semibold text-[#9C7A3C] uppercase tracking-widest block mb-1">
-                  {language === "hi" ? "निशुल्क शास्त्रोक्त मार्गदर्शन" : "Vedic Guidance"}
+                  {language === "hi"
+                    ? "निशुल्क शास्त्रोक्त मार्गदर्शन"
+                    : language === "bn"
+                    ? "বিনামূল্যে বৈদিক পরামর্শ"
+                    : "Vedic Guidance"}
                 </span>
                 <h3 className="text-2xl font-serif text-[#241812] font-bold">
-                  {language === "hi" ? "तीर्थ पुरोहित से बात करें" : "Speak with a Teerth Pandit"}
+                  {language === "hi"
+                    ? "तीर्थ पुरोहित से बात करें"
+                    : language === "bn"
+                    ? "তীর্থ পুরোহিতের সাথে কথা বলুন"
+                    : "Speak with a Teerth Pandit"}
                 </h3>
                 <p className="text-[#7A6F67] text-xs mt-1">
                   {language === "hi"
                     ? "यदि आप अनुष्ठान या विधि को लेकर असमंजस में हैं, तो सीधे हमारे अनुभवी पंडित जी से मार्गदर्शन प्राप्त करें।"
+                    : language === "bn"
+                    ? "কোন অনুষ্ঠানটি করবেন বুঝতে না পারলে সরাসরি আমাদের অভিজ্ঞ পুরোহিতের সাথে কথা বলুন।"
                     : "Not sure which ritual is right? Speak directly with an experienced Teerth Purohit in Gaya Ji."}
                 </p>
               </div>
@@ -96,25 +118,35 @@ export function TalkToPanditModal({ isOpen, onClose, defaultRitual = "General Gu
               {/* Direct Instant Action Buttons */}
               <div className="grid grid-cols-2 gap-3 mb-6">
                 <a
-                  href="tel:+919431287650"
+                  href="tel:+919097327088"
                   className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#241812] text-white text-xs font-semibold uppercase tracking-wider hover:bg-[#38261D] transition-all shadow-sm"
                 >
                   <Phone className="w-3.5 h-3.5 text-[#DFC07C]" />
-                  <span>{language === "hi" ? "सीधे कॉल करें" : "Direct Call"}</span>
+                  <span>
+                    {language === "hi"
+                      ? "सीधे कॉल करें"
+                      : language === "bn"
+                      ? "সরাসরি কল করুন"
+                      : "Direct Call"}
+                  </span>
                 </a>
                 <button
                   onClick={handleWhatsAppDirect}
                   className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-[#25D366] text-white text-xs font-semibold uppercase tracking-wider hover:bg-[#20ba5a] transition-all shadow-sm"
                 >
                   <MessageCircle className="w-3.5 h-3.5" />
-                  <span>{language === "hi" ? "व्हाट्सएप" : "WhatsApp"}</span>
+                  <span>WhatsApp</span>
                 </button>
               </div>
 
               <div className="relative flex py-2 items-center mb-6">
                 <div className="flex-grow border-t border-[#E8E2D5]" />
                 <span className="flex-shrink mx-3 text-[11px] text-[#7A6F67] uppercase tracking-wider">
-                  {language === "hi" ? "अथवा कॉलबैक का अनुरोध करें" : "Or Request a Callback"}
+                  {language === "hi"
+                    ? "अथवा कॉलबैक का अनुरोध करें"
+                    : language === "bn"
+                    ? "অথবা কলব্যাকের জন্য অনুরোধ জানান"
+                    : "Or Request a Callback"}
                 </span>
                 <div className="flex-grow border-t border-[#E8E2D5]" />
               </div>
@@ -122,7 +154,11 @@ export function TalkToPanditModal({ isOpen, onClose, defaultRitual = "General Gu
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label className="block text-xs font-semibold text-[#241812] mb-1">
-                    {language === "hi" ? "आपका पूरा नाम *" : "Your Full Name *"}
+                    {language === "hi"
+                      ? "आपका पूरा नाम *"
+                      : language === "bn"
+                      ? "আপনার সম্পূর্ণ নাম *"
+                      : "Your Full Name *"}
                   </label>
                   <input
                     type="text"
@@ -136,7 +172,11 @@ export function TalkToPanditModal({ isOpen, onClose, defaultRitual = "General Gu
 
                 <div>
                   <label className="block text-xs font-semibold text-[#241812] mb-1">
-                    {language === "hi" ? "मोबाइल नंबर (10 अंक) *" : "Mobile Number (10 digits) *"}
+                    {language === "hi"
+                      ? "मोबाइल नंबर (10 अंक) *"
+                      : language === "bn"
+                      ? "মোবাইল নম্বর (১০ অঙ্ক) *"
+                      : "Mobile Number (10 digits) *"}
                   </label>
                   <div className="flex">
                     <span className="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-[#E8E2D5] bg-[#F4EFE6] text-xs font-medium text-[#241812]">
@@ -149,7 +189,7 @@ export function TalkToPanditModal({ isOpen, onClose, defaultRitual = "General Gu
                       pattern="[0-9]{10}"
                       value={phone}
                       onChange={(e) => setPhone(e.target.value.replace(/\D/g, ""))}
-                      placeholder="9876543210"
+                      placeholder="9097327088"
                       className="w-full px-4 py-2.5 bg-white rounded-r-xl border border-[#E8E2D5] text-xs sm:text-sm text-[#241812] focus:ring-1 focus:ring-[#B85014]"
                     />
                   </div>
@@ -157,13 +197,17 @@ export function TalkToPanditModal({ isOpen, onClose, defaultRitual = "General Gu
 
                 <div>
                   <label className="block text-xs font-semibold text-[#241812] mb-1">
-                    {language === "hi" ? "आपका शहर (वैकल्पिक)" : "Your City (Optional)"}
+                    {language === "hi"
+                      ? "आपका शहर (वैकल्पिक)"
+                      : language === "bn"
+                      ? "আপনার শহর (ঐচ্ছিক)"
+                      : "Your City (Optional)"}
                   </label>
                   <input
                     type="text"
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
-                    placeholder="e.g. Patna, Delhi, Mumbai"
+                    placeholder="e.g. Kolkata, Patna, Delhi"
                     className="w-full px-4 py-2.5 bg-white rounded-xl border border-[#E8E2D5] text-xs sm:text-sm text-[#241812] focus:ring-1 focus:ring-[#B85014]"
                   />
                 </div>
@@ -171,6 +215,8 @@ export function TalkToPanditModal({ isOpen, onClose, defaultRitual = "General Gu
                 <p className="text-[11px] text-[#7A6F67] leading-tight">
                   {language === "hi"
                     ? "आपकी जानकारी केवल मार्गदर्शन एवं तीर्थ समन्वय के लिए सुरक्षित रखी जाती है।"
+                    : language === "bn"
+                    ? "আপনার তথ্য সম্পূর্ণ সুরক্ষিত থাকবে এবং শুধুমাত্র তীর্থযাত্রার সহায়তায় ব্যবহৃত হবে।"
                     : "Your details are strictly used to coordinate your pilgrimage. Zero spam."}
                 </p>
 
@@ -178,7 +224,11 @@ export function TalkToPanditModal({ isOpen, onClose, defaultRitual = "General Gu
                   type="submit"
                   className="w-full py-3 px-6 rounded-full bg-[#241812] hover:bg-[#38261D] text-white text-xs font-semibold uppercase tracking-wider shadow-sm transition-all"
                 >
-                  {language === "hi" ? "कॉलबैक का अनुरोध करें" : "Request Free Guidance"}
+                  {language === "hi"
+                    ? "कॉलबैक का अनुरोध करें"
+                    : language === "bn"
+                    ? "বিনামূল্যে পরামর্শ চান"
+                    : "Request Free Guidance"}
                 </button>
               </form>
             </>

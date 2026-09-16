@@ -104,7 +104,7 @@ export default function WhereToStayPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
-              href="https://wa.me/919431287650?text=Pranam.%20I%20need%20assistance%20with%20clean%20hotel%20booking%20in%20Gaya%20Ji%20for%20my%20family."
+              href="https://wa.me/919097327088?text=Pranam%20Pandit%20Ji.%20I%20need%20assistance%20with%20clean%20hotel%20booking%20in%20Gaya%20Ji%20for%20my%20family."
               target="_blank"
               rel="noreferrer"
               className="px-6 py-3.5 rounded-full bg-[#25D366] text-white font-semibold text-xs sm:text-sm shadow-md hover:bg-[#20ba5a] transition-all flex items-center justify-center gap-2"
@@ -113,11 +113,11 @@ export default function WhereToStayPage() {
               <span>WhatsApp for Hotel</span>
             </a>
             <a
-              href="tel:+919431287650"
+              href="tel:+919097327088"
               className="px-6 py-3.5 rounded-full bg-white/10 border border-[#DFC07C] text-white font-semibold text-xs sm:text-sm hover:bg-white/20 transition-all flex items-center justify-center gap-2"
             >
               <Phone className="w-4 h-4 text-[#DFC07C]" />
-              <span>Call for Hotel Guidance</span>
+              <span>Call (+91 90973 27088)</span>
             </a>
           </div>
         </div>

@@ -82,11 +82,11 @@ export default function HelpCenterPage() {
               </p>
             </div>
             <a
-              href="tel:+919431287650"
+              href="tel:+919097327088"
               className="inline-flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-[#2A1810] text-[#FAF7F2] text-xs font-bold hover:bg-[#3D2418] transition-all"
             >
               <Phone className="w-3.5 h-3.5 text-[#DFC07C]" />
-              <span>+91 94312 87650</span>
+              <span>+91 90973 27088</span>
             </a>
           </div>
 
@@ -104,13 +104,13 @@ export default function HelpCenterPage() {
               </p>
             </div>
             <a
-              href="https://wa.me/919431287650?text=Pranam.%20I%20need%20assistance%20with%20Gaya%20Ji%20Pind%20Daan."
+              href="https://wa.me/919097327088?text=Pranam%20Pandit%20Ji.%20I%20need%20assistance%20with%20Gaya%20Ji%20Pind%20Daan."
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-[#25D366] text-white text-xs font-bold hover:bg-[#20ba5a] transition-all"
             >
               <MessageCircle className="w-3.5 h-3.5" />
-              <span>Chat on WhatsApp</span>
+              <span>Chat on WhatsApp (+91 90973 27088)</span>
             </a>
           </div>
 
@@ -128,10 +128,10 @@ export default function HelpCenterPage() {
               </p>
             </div>
             <a
-              href="tel:+919431287650"
+              href="tel:+919097327088"
               className="inline-flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-gradient-to-r from-[#C25E1A] to-[#9A450E] text-white text-xs font-bold shadow-md hover:brightness-105 transition-all"
             >
-              <span>Emergency Ground Support</span>
+              <span>Emergency Support (+91 90973 27088)</span>
             </a>
           </div>
 

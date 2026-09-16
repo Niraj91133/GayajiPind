@@ -13,26 +13,36 @@ export function MeetPanditsSection() {
   const [panditModalOpen, setPanditModalOpen] = useState(false);
 
   return (
-    <section className="py-16 lg:py-24 bg-white border-b border-[#E8E2D5] relative">
+    <section className="py-14 lg:py-20 bg-white border-b border-[#E8E2D5] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="text-xs uppercase tracking-widest text-[#9C7A3C] font-semibold block mb-2">
-            {language === "hi" ? "प्रामाणिक गयावाल परंपरा" : "Authentic Lineage & Trust"}
+            {language === "hi"
+              ? "प्रामाणिक गयावाल परंपरा"
+              : language === "bn"
+              ? "ঐতিহ্যবাহী গয়াবাল বংশ"
+              : "Authentic Lineage & Trust"}
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#241812] tracking-tight">
-            {language === "hi" ? "हमारे प्रमाणित तीर्थ पुरोहित" : "Our Verified Teerth Pandits"}
+          <h2 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-bold text-[#241812] tracking-tight">
+            {language === "hi"
+              ? "हमारे प्रमाणित तीर्थ पुरोहित"
+              : language === "bn"
+              ? "আমাদের প্রমাণিত তীর্থ পুরোহিতগণ"
+              : "Our Verified Teerth Pandits"}
           </h2>
-          <p className="text-xs sm:text-sm text-[#7A6F67] mt-3">
+          <p className="text-xs sm:text-sm text-[#7A6F67] mt-3 max-w-2xl mx-auto">
             {language === "hi"
               ? "विष्णुपद गर्भगृह एवं फल्गु तीर्थ से जुड़े विद्वान एवं अनुभवी पुरोहित, जो पीढ़ियों से इस पावन सेवा में समर्पित हैं।"
+              : language === "bn"
+              ? "বিষ্ণুপদ গর্ভগৃহ ও ফল্গু তীর্থের সাথে যুক্ত বিদ্বান ও অভিজ্ঞ পুরোহিতমণ্ডলী, যাঁরা বংশপরম্পরায় সেবা প্রদান করছেন।"
               : "Generational scholars dedicated to conducting sacred ancestral rites at Vishnupad Sanctum and Falgu Ghats."}
           </p>
           <SacredDivider className="my-5" />
         </div>
 
-        {/* Pandits Grid: Horizontal Scroll on Mobile (Apple HIG), 3-Col Grid on Desktop */}
+        {/* Pandits Grid: Horizontal Scroll on Mobile, 3-Col Grid on Desktop */}
         <div className="flex md:grid md:grid-cols-3 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory gap-4 sm:gap-8 pb-4 sm:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar mb-10 sm:mb-12 text-left">
           {PANDITS_DATA.map((pandit) => (
             <div
@@ -50,7 +60,12 @@ export function MeetPanditsSection() {
                 
                 <div className="absolute bottom-3 left-3 text-white">
                   <span className="text-xs font-bold text-[#DFC07C]">
-                    {pandit.experienceYears}+ {language === "hi" ? "वर्षों का अनुभव" : "Years Vedic Experience"}
+                    {pandit.experienceYears}+{" "}
+                    {language === "hi"
+                      ? "वर्षों का अनुभव"
+                      : language === "bn"
+                      ? "বছরের বৈদিক অভিজ্ঞতা"
+                      : "Years Vedic Experience"}
                   </span>
                 </div>
               </div>
@@ -66,10 +81,16 @@ export function MeetPanditsSection() {
 
                 <div className="space-y-1.5 sm:space-y-2 text-xs text-[#5C4D44] mb-4 flex-grow">
                   <div>
-                    <strong className="text-[#241812]">{language === "hi" ? "परंपरा:" : "Lineage:"}</strong> {pandit.lineage}
+                    <strong className="text-[#241812]">
+                      {language === "hi" ? "परंपरा:" : language === "bn" ? "বংশ:" : "Lineage:"}
+                    </strong>{" "}
+                    {pandit.lineage}
                   </div>
                   <div>
-                    <strong className="text-[#241812]">{language === "hi" ? "भाषाएं:" : "Languages:"}</strong> {pandit.languages.join(", ")}
+                    <strong className="text-[#241812]">
+                      {language === "hi" ? "भाषाएं:" : language === "bn" ? "ভাষা:" : "Languages:"}
+                    </strong>{" "}
+                    {pandit.languages.join(", ")}
                   </div>
                 </div>
 
@@ -79,7 +100,13 @@ export function MeetPanditsSection() {
                     href={`/pandits/${pandit.slug}`}
                     className="text-xs font-bold text-[#241812] hover:text-[#B85014] flex items-center gap-1 transition-colors"
                   >
-                    <span>{language === "hi" ? "परिचय देखें" : "View Profile"}</span>
+                    <span>
+                      {language === "hi"
+                        ? "परिचय देखें"
+                        : language === "bn"
+                        ? "প্রোফাইল দেখুন"
+                        : "View Profile"}
+                    </span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
 
@@ -87,7 +114,11 @@ export function MeetPanditsSection() {
                     onClick={() => setPanditModalOpen(true)}
                     className="text-xs font-bold text-[#B85014] hover:underline"
                   >
-                    {language === "hi" ? "बात करें" : "Talk to Pandit"}
+                    {language === "hi"
+                      ? "बात करें"
+                      : language === "bn"
+                      ? "পণ্ডিত জির সাথে কথা বলুন"
+                      : "Talk to Pandit"}
                   </button>
                 </div>
               </div>
@@ -98,7 +129,13 @@ export function MeetPanditsSection() {
         {/* Mobile Swipe Hint */}
         <div className="flex items-center justify-center gap-1.5 text-center text-[11px] text-[#9C7A3C] mb-8 md:hidden">
           <span>←</span>
-          <span>{language === "hi" ? "सभी पुरोहित देखने हेतु स्वाइप करें" : "Swipe to see all Pandits"}</span>
+          <span>
+            {language === "hi"
+              ? "सभी पुरोहित देखने हेतु स्वाइप करें"
+              : language === "bn"
+              ? "সকল পুরোহিত দেখতে সোয়াইপ করুন"
+              : "Swipe to see all Pandits"}
+          </span>
           <span>→</span>
         </div>
 
@@ -108,7 +145,13 @@ export function MeetPanditsSection() {
             href="/pandits"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#F4EFE6] border border-[#E8E2D5] text-[#241812] text-xs font-semibold uppercase tracking-wider hover:bg-[#FAF8F5] transition-all"
           >
-            <span>{language === "hi" ? "सभी प्रमाणित तीर्थ पुरोहित देखें" : "View All Verified Teerth Pandits"}</span>
+            <span>
+              {language === "hi"
+                ? "सभी प्रमाणित तीर्थ पुरोहित देखें"
+                : language === "bn"
+                ? "সকল প্রমাণিত তীর্থ পুরোহিত দেখুন"
+                : "View All Verified Teerth Pandits"}
+            </span>
             <ArrowRight className="w-4 h-4 text-[#B85014]" />
           </Link>
         </div>
@@ -122,3 +165,4 @@ export function MeetPanditsSection() {
     </section>
   );
 }
+

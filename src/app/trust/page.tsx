@@ -110,11 +110,11 @@ export default function TrustPage() {
             Our team in Gaya Ji is happy to address any questions regarding tradition, pandits, or logistics.
           </p>
           <a
-            href="tel:+919431287650"
+            href="tel:+919097327088"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#2A1810] text-[#FAF7F2] font-bold text-xs sm:text-sm shadow-md hover:bg-[#3D2418] transition-all"
           >
             <Phone className="w-4 h-4 text-[#DFC07C]" />
-            <span>Call Coordinator: +91 94312 87650</span>
+            <span>Call Coordinator: +91 90973 27088</span>
           </a>
         </div>
 

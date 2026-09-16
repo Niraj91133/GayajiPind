@@ -121,13 +121,13 @@ export default function NriHubPage() {
               Submit NRI Booking Request
             </Link>
             <a
-              href="https://wa.me/919431287650?text=Pranam.%20I%20am%20an%20NRI%20looking%20to%20arrange%20Gaya%20Ji%20Pind%20Daan%20rituals."
+              href="https://wa.me/919097327088?text=Pranam%20Pandit%20Ji.%20I%20am%20an%20NRI%20looking%20to%20arrange%20Gaya%20Ji%20Pind%20Daan%20rituals."
               target="_blank"
               rel="noreferrer"
               className="px-6 py-3 rounded-full bg-[#25D366] text-white text-xs font-bold hover:bg-[#20ba5a] transition-all flex items-center justify-center gap-2"
             >
               <MessageCircle className="w-4 h-4" />
-              <span>WhatsApp Coordinator</span>
+              <span>WhatsApp Coordinator (+91 90973 27088)</span>
             </a>
           </div>
         </div>

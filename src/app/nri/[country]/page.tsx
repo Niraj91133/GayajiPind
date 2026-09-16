@@ -59,15 +59,15 @@ export default async function NriCountryPage({
               Request Booking from {countryData.country}
             </Link>
             <a
-              href={`https://wa.me/919431287650?text=${encodeURIComponent(
-                `Pranam. I am contacting from ${countryData.country} regarding Gaya Ji Pind Daan pilgrimage assistance.`
+              href={`https://wa.me/919097327088?text=${encodeURIComponent(
+                `Pranam Pandit Ji. I am contacting from ${countryData.country} regarding Gaya Ji Pind Daan pilgrimage assistance.`
               )}`}
               target="_blank"
               rel="noreferrer"
               className="px-6 py-3 rounded-full bg-[#25D366] text-white font-bold text-xs sm:text-sm hover:bg-[#20ba5a] transition-all flex items-center gap-1.5"
             >
               <MessageCircle className="w-4 h-4" />
-              <span>WhatsApp Consultation</span>
+              <span>WhatsApp Consultation (+91 90973 27088)</span>
             </a>
           </div>
         </div>

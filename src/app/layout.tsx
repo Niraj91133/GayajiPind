@@ -13,6 +13,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gayajipindsewa.com"),
   title: "GayajiPind — Trusted Digital Pilgrimage Coordinator for Gaya Ji",
   description: "Arrange your sacred Pind Daan, Tripindi Shradh, or Narayan Bali in Gaya Ji, Bihar with verified Teerth Pandits, transparent coordination, and personal assistance.",
   keywords: [

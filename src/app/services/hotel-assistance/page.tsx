@@ -36,7 +36,7 @@ export default function HotelAssistanceServicePage() {
 
           <div className="mt-6 pt-4 border-t border-[#E5DCCE] flex flex-wrap items-center gap-3">
             <a
-              href="https://wa.me/919431287650?text=Pranam.%20I%20need%20assistance%20with%20hotel%20booking%20in%20Gaya%20Ji."
+              href="https://wa.me/919097327088?text=Pranam%20Pandit%20Ji.%20I%20need%20assistance%20with%20clean%20hotel%20booking%20in%20Gaya%20Ji."
               target="_blank"
               rel="noreferrer"
               className="px-6 py-3 rounded-full bg-[#25D366] text-white font-bold text-xs sm:text-sm hover:bg-[#20ba5a] transition-all flex items-center gap-1.5"
@@ -45,10 +45,10 @@ export default function HotelAssistanceServicePage() {
               <span>WhatsApp for Hotel</span>
             </a>
             <a
-              href="tel:+919431287650"
+              href="tel:+919097327088"
               className="px-6 py-3 rounded-full bg-[#FAF5E6] border border-[#DFC07C] text-[#2A1810] font-semibold text-xs sm:text-sm hover:bg-[#F5EFE6] transition-all"
             >
-              Call Coordinator
+              Call Coordinator (+91 90973 27088)
             </a>
           </div>
         </div>

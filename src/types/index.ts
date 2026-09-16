@@ -9,8 +9,10 @@ export interface Ritual {
   slug: RitualSlug;
   name: string;
   hindiName: string;
+  bengaliName?: string;
   tagline: string;
   hindiTagline: string;
+  bengaliTagline?: string;
   shortDescription: string;
   fullDescription: string;
   duration: string;
@@ -54,8 +56,11 @@ export interface SacredPlace {
   slug: string;
   name: string;
   hindiName: string;
+  bengaliName?: string;
   tagline: string;
+  bengaliTagline?: string;
   significance: string;
+  bengaliSignificance?: string;
   history: string;
   whatToKnow: string[];
   location: string;

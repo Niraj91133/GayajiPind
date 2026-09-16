@@ -15,12 +15,30 @@ export function Header() {
   const [panditModalOpen, setPanditModalOpen] = useState(false);
 
   const navLinks = [
-    { href: "/pind-daan", label: language === "hi" ? "पिंडदान विधि" : "Pind Daan" },
-    { href: "/rituals", label: language === "hi" ? "अनुष्ठान" : "Rituals" },
-    { href: "/guide", label: language === "hi" ? "गया जी गाइड" : "Gaya Ji Guide" },
-    { href: "/pandits", label: language === "hi" ? "तीर्थ पुरोहित" : "Pandits" },
-    { href: "/about", label: language === "hi" ? "हमारे बारे में" : "About" },
-    { href: "/help", label: language === "hi" ? "सहायता" : "Help" },
+    {
+      href: "/pind-daan",
+      label: language === "hi" ? "पिंडदान विधि" : language === "bn" ? "পিণ্ডদান বিধি" : "Pind Daan",
+    },
+    {
+      href: "/rituals",
+      label: language === "hi" ? "अनुष्ठान" : language === "bn" ? "অনুষ্ঠান সমূহ" : "Rituals",
+    },
+    {
+      href: "/guide",
+      label: language === "hi" ? "गया जी गाइड" : language === "bn" ? "গয়া তীর্থ গাইড" : "Gaya Ji Guide",
+    },
+    {
+      href: "/pandits",
+      label: language === "hi" ? "तीर्थ पुरोहित" : language === "bn" ? "তীর্থ পুরোহিত" : "Pandits",
+    },
+    {
+      href: "/about",
+      label: language === "hi" ? "हमारे बारे में" : language === "bn" ? "আমাদের সম্পর্কে" : "About",
+    },
+    {
+      href: "/help",
+      label: language === "hi" ? "सहायता" : language === "bn" ? "সাহায্য" : "Help",
+    },
   ];
 
   return (
@@ -32,27 +50,44 @@ export function Header() {
             <span className="flex items-center gap-1.5">
               <ShieldCheck className="w-3.5 h-3.5 text-[#DFC07C]" />
               <strong className="text-white font-medium">
-                {language === "hi" ? "विष्णुपद एवं फल्गु तीर्थ" : "Vishnupad & Falgu Kshetra, Gaya Ji"}
+                {language === "hi"
+                  ? "विष्णुपद एवं फल्गु तीर्थ"
+                  : language === "bn"
+                  ? "বিষ্ণুপদ ও ফল্গু তীর্থ"
+                  : "Vishnupad & Falgu Kshetra, Gaya Ji"}
               </strong>
-              — {language === "hi" ? "प्रमाणित गयावाल पुरोहित सेवा" : "Authentic Vedic Pilgrimage Coordination"}
+              —{" "}
+              {language === "hi"
+                ? "प्रमाणित गयावाल पुरोहित सेवा"
+                : language === "bn"
+                ? "প্রমাণিত গয়াবাল পুরোহিত সেবা"
+                : "Authentic Vedic Pilgrimage Coordination"}
             </span>
           </div>
           <div className="flex items-center gap-6 text-[#D8D0C0]">
             <Link href="/booking-status" className="hover:text-white transition-colors">
-              {language === "hi" ? "बुकिंग स्थिति जांचें" : "Track Booking Status"}
+              {language === "hi"
+                ? "बुकिंग स्थिति जांचें"
+                : language === "bn"
+                ? "বুকিং স্ট্যাটাস দেখুন"
+                : "Track Booking Status"}
             </Link>
             <button
               onClick={() => setPanditModalOpen(true)}
               className="text-[#DFC07C] hover:underline font-medium"
             >
-              {language === "hi" ? "पंडित जी से बात करें" : "Talk to a Pandit"}
+              {language === "hi"
+                ? "पंडित जी से बात करें"
+                : language === "bn"
+                ? "পণ্ডিত জির সাথে কথা বলুন"
+                : "Talk to a Pandit"}
             </button>
             <a
-              href="tel:+919431287650"
+              href="tel:+919097327088"
               className="hover:text-white transition-colors flex items-center gap-1.5 font-medium"
             >
               <Phone className="w-3 h-3 text-[#DFC07C]" />
-              <span>+91 94312 87650</span>
+              <span>+91 90973 27088</span>
             </a>
           </div>
         </div>
@@ -73,7 +108,11 @@ export function Header() {
                   Gayaji<span className="text-[#B85014]">Pind</span>
                 </span>
                 <span className="text-[10px] uppercase tracking-widest text-[#9C7A3C] font-semibold mt-0.5">
-                  {language === "hi" ? "तीर्थ समन्वयक • गया जी" : "Pilgrimage Coordinator • Gaya Ji"}
+                  {language === "hi"
+                    ? "तीर्थ समन्वयक • गया जी"
+                    : language === "bn"
+                    ? "তীর্থ সমন্বয়ক • গয়া জী"
+                    : "Pilgrimage Coordinator • Gaya Ji"}
                 </span>
               </div>
             </Link>
@@ -99,28 +138,41 @@ export function Header() {
             </nav>
 
             {/* Right Side Actions */}
-            <div className="hidden sm:flex items-center gap-4">
-              {/* Language Switcher */}
+            <div className="hidden sm:flex items-center gap-3">
+              {/* 3-Way Language Switcher: Hindi, English, Bengali */}
               <div className="flex items-center rounded-full bg-[#F4EFE6] border border-[#E8E2D5] p-1 text-xs font-semibold text-[#241812]">
                 <button
                   onClick={() => setLanguage("hi")}
-                  className={`px-3 py-1 rounded-full transition-all ${
+                  className={`px-2.5 py-1 rounded-full transition-all ${
                     language === "hi"
                       ? "bg-[#241812] text-[#FAF8F5] shadow-sm"
                       : "text-[#7A6F67] hover:text-[#241812]"
                   }`}
+                  title="हिंदी"
                 >
                   हिंदी
                 </button>
                 <button
                   onClick={() => setLanguage("en")}
-                  className={`px-3 py-1 rounded-full transition-all ${
+                  className={`px-2.5 py-1 rounded-full transition-all ${
                     language === "en"
                       ? "bg-[#241812] text-[#FAF8F5] shadow-sm"
                       : "text-[#7A6F67] hover:text-[#241812]"
                   }`}
+                  title="English"
                 >
                   EN
+                </button>
+                <button
+                  onClick={() => setLanguage("bn")}
+                  className={`px-2.5 py-1 rounded-full transition-all ${
+                    language === "bn"
+                      ? "bg-[#241812] text-[#FAF8F5] shadow-sm"
+                      : "text-[#7A6F67] hover:text-[#241812]"
+                  }`}
+                  title="বাংলা"
+                >
+                  বাংলা
                 </button>
               </div>
 
@@ -129,26 +181,46 @@ export function Header() {
                 href="/booking-status"
                 className="hidden xl:inline-flex items-center px-3 py-2 text-xs font-medium text-[#4A3E38] hover:text-[#241812] transition-colors"
               >
-                {language === "hi" ? "स्थिति जांचें" : "Track Status"}
+                {language === "hi"
+                  ? "स्थिति जांचें"
+                  : language === "bn"
+                  ? "স্ট্যাটাস দেখুন"
+                  : "Track Status"}
               </Link>
 
               {/* Primary CTA */}
               <Link
                 href="/request-booking"
-                className="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-[#241812] hover:bg-[#38261D] text-[#FAF8F5] text-xs font-semibold uppercase tracking-wider transition-all shadow-sm"
+                className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[#241812] hover:bg-[#38261D] text-[#FAF8F5] text-xs font-semibold uppercase tracking-wider transition-all shadow-sm"
               >
-                {language === "hi" ? "बुकिंग अनुरोध" : "Request Booking"}
+                {language === "hi"
+                  ? "बुकिंग अनुरोध"
+                  : language === "bn"
+                  ? "বুকিং অনুরোধ"
+                  : "Request Booking"}
               </Link>
             </div>
 
-            {/* Mobile Menu Button */}
-            <div className="flex items-center gap-2 lg:hidden">
-              <div className="flex items-center rounded-full bg-[#F4EFE6] border border-[#E8E2D5] p-0.5 text-xs">
+            {/* Mobile Menu Button + Language Switcher */}
+            <div className="flex items-center gap-1.5 lg:hidden">
+              <div className="flex items-center rounded-full bg-[#F4EFE6] border border-[#E8E2D5] p-0.5 text-xs font-medium">
                 <button
-                  onClick={() => setLanguage(language === "en" ? "hi" : "en")}
-                  className="px-2.5 py-0.5 font-semibold text-[#241812]"
+                  onClick={() => setLanguage("hi")}
+                  className={`px-1.5 py-0.5 rounded-full ${language === "hi" ? "bg-[#241812] text-white font-bold" : "text-[#7A6F67]"}`}
                 >
-                  {language === "en" ? "हिंदी" : "EN"}
+                  हिं
+                </button>
+                <button
+                  onClick={() => setLanguage("en")}
+                  className={`px-1.5 py-0.5 rounded-full ${language === "en" ? "bg-[#241812] text-white font-bold" : "text-[#7A6F67]"}`}
+                >
+                  EN
+                </button>
+                <button
+                  onClick={() => setLanguage("bn")}
+                  className={`px-1.5 py-0.5 rounded-full ${language === "bn" ? "bg-[#241812] text-white font-bold" : "text-[#7A6F67]"}`}
+                >
+                  বাং
                 </button>
               </div>
 
@@ -179,12 +251,26 @@ export function Header() {
               ))}
 
               <div className="pt-3 border-t border-[#E8E2D5] flex flex-col gap-2">
+                <a
+                  href="tel:+919097327088"
+                  className="text-xs font-semibold text-[#241812] py-2 px-3 rounded-lg bg-[#FAF5E6] border border-[#DFC07C]/50 flex items-center gap-2"
+                >
+                  <Phone className="w-3.5 h-3.5 text-[#B85014]" />
+                  <span>हेल्पलाइन / Helpline: +91 90973 27088</span>
+                </a>
+
                 <Link
                   href="/booking-status"
                   onClick={() => setMobileMenuOpen(false)}
                   className="text-xs font-medium text-[#4A3E38] py-2 px-3 rounded-lg hover:bg-[#F4EFE6] flex items-center justify-between"
                 >
-                  <span>{language === "hi" ? "बुकिंग स्थिति जांचें" : "Track Request Status"}</span>
+                  <span>
+                    {language === "hi"
+                      ? "बुकिंग स्थिति जांचें"
+                      : language === "bn"
+                      ? "বুকিং স্ট্যাটাস দেখুন"
+                      : "Track Request Status"}
+                  </span>
                   <span className="text-[10px] bg-[#E8E2D5] px-2 py-0.5 rounded font-mono text-[#241812]">GP-XXXXXX</span>
                 </Link>
 
@@ -195,7 +281,11 @@ export function Header() {
                   }}
                   className="w-full text-left text-xs font-semibold text-[#B85014] py-2 px-3 rounded-lg hover:bg-[#FCE3CE]/50"
                 >
-                  {language === "hi" ? "पंडित जी से बात करें" : "Talk to a Teerth Pandit"}
+                  {language === "hi"
+                    ? "पंडित जी से बात करें"
+                    : language === "bn"
+                    ? "পণ্ডিত জির সাথে কথা বলুন"
+                    : "Talk to a Teerth Pandit"}
                 </button>
 
                 <Link
@@ -203,7 +293,11 @@ export function Header() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="w-full mt-2 text-center py-3 rounded-full bg-[#241812] text-white font-semibold text-xs uppercase tracking-wider shadow-md"
                 >
-                  {language === "hi" ? "बुकिंग अनुरोध भेजें" : "Request Booking"}
+                  {language === "hi"
+                    ? "बुकिंग अनुरोध भेजें"
+                    : language === "bn"
+                    ? "বুকিং অনুরোধ পাঠান"
+                    : "Request Booking"}
                 </Link>
               </div>
             </div>

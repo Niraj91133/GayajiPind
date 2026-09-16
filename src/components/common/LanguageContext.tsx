@@ -17,7 +17,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     try {
       const saved = localStorage.getItem("gayajipind_lang") as Language;
-      if (saved === "en" || saved === "hi") {
+      if (saved === "en" || saved === "hi" || saved === "bn") {
         setLanguageState(saved);
       }
     } catch {

@@ -890,36 +890,56 @@ function BookingForm() {
             <p className="text-sm text-[#5C4033] leading-relaxed max-w-lg mx-auto mb-8">
               {language === "hi"
                 ? `श्री ${fullName}, आपके अनुरोध का विवरण हमारे गया जी तीर्थ समन्वयक को प्राप्त हो गया है। हमारे समन्वयक आपके नंबर (+91 ${mobile}) पर कॉल अथवा व्हाट्सएप करके संपूर्ण विवरण की पुष्टि करेंगे।`
+                : language === "bn"
+                ? `শ্রী ${fullName}, আপনার অনুরোধের বিবরণ আমাদের তীর্থ সমন্বয়ক পেয়েছেন। সমন্বয়ক আপনার নম্বরে (+91 ${mobile}) কল বা হোয়াটসঅ্যাপ করে সমস্ত ব্যবস্থার নিশ্চিতকরণ করবেন।`
                 : `Thank you, ${fullName}. Our Gaya Ji pilgrimage coordinator has received your request and will contact you directly on +91 ${mobile} to confirm ritual details and pandit assignment.`}
             </p>
 
             {/* Action Buttons (Rule #41) */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-8">
               <a
-                href={`https://wa.me/919431287650?text=${encodeURIComponent(
-                  `Pranam. I have submitted booking request ${submittedBooking?.requestId} for Gaya Ji Pind Daan. Devotee: ${fullName}.`
+                href={`https://wa.me/919097327088?text=${encodeURIComponent(
+                  `Pranam Pandit Ji. I have submitted booking request ${submittedBooking?.requestId} for Gaya Ji Pind Daan. Devotee: ${fullName}.`
                 )}`}
                 target="_blank"
                 rel="noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#25D366] text-white font-semibold text-sm shadow-md hover:bg-[#20ba5a] transition-all"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>{language === "hi" ? "व्हाट्सएप पर तुरंत पुष्टि करें" : "WhatsApp Coordinator"}</span>
+                <span>
+                  {language === "hi"
+                    ? "व्हाट्सएप पर तुरंत पुष्टि करें"
+                    : language === "bn"
+                    ? "হোয়াটসঅ্যাপে যোগাযোগ করুন"
+                    : "WhatsApp Coordinator"}
+                </span>
               </a>
 
               <a
-                href="tel:+919431287650"
+                href="tel:+919097327088"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#2A1810] text-[#FAF7F2] font-semibold text-sm hover:bg-[#3D2418] transition-all"
               >
                 <Phone className="w-4 h-4 text-[#DFC07C]" />
-                <span>{language === "hi" ? "सीधे कॉल करें" : "Direct Call Us"}</span>
+                <span>
+                  {language === "hi"
+                    ? "सीधे कॉल करें"
+                    : language === "bn"
+                    ? "সরাসরি কল করুন"
+                    : "Direct Call Us"}
+                </span>
               </a>
 
               <Link
                 href={`/booking-status?id=${submittedBooking?.requestId}`}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#FAF5E6] border border-[#DFC07C] text-[#2A1810] font-semibold text-sm hover:bg-[#F5EFE6] transition-all"
               >
-                <span>{language === "hi" ? "प्रगति जांचें" : "Track Status"}</span>
+                <span>
+                  {language === "hi"
+                    ? "प्रगति जांचें"
+                    : language === "bn"
+                    ? "স্ট্যাটাস দেখুন"
+                    : "Track Status"}
+                </span>
               </Link>
             </div>
 

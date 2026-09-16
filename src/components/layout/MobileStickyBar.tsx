@@ -17,9 +17,9 @@ export function MobileStickyBar() {
 
   const handleWhatsApp = () => {
     const text = encodeURIComponent(
-      "Pranam. I want to inquire about Gaya Ji Pind Daan rituals and booking assistance."
+      "Pranam Pandit Ji. I want to inquire about Gaya Ji Pind Daan rituals and booking assistance."
     );
-    window.open(`https://wa.me/919431287650?text=${text}`, "_blank");
+    window.open(`https://wa.me/919097327088?text=${text}`, "_blank");
   };
 
   return (
@@ -27,11 +27,11 @@ export function MobileStickyBar() {
       <div className="grid grid-cols-3 gap-2 max-w-md mx-auto">
         {/* Call Button */}
         <a
-          href="tel:+919431287650"
+          href="tel:+919097327088"
           className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-white border border-[#E8E2D5] text-[#241812] text-[11px] font-semibold active:scale-95 transition-transform shadow-xs"
         >
           <Phone className="w-4 h-4 text-[#B85014] mb-0.5" />
-          <span>{language === "hi" ? "कॉल करें" : "Call Pandit"}</span>
+          <span>{language === "hi" ? "कॉल करें" : language === "bn" ? "কল করুন" : "Call Pandit"}</span>
         </a>
 
         {/* WhatsApp Button */}
@@ -49,7 +49,7 @@ export function MobileStickyBar() {
           className="flex flex-col items-center justify-center py-2 px-1 rounded-xl bg-[#241812] text-[#FAF8F5] text-[11px] font-semibold active:scale-95 transition-transform shadow-sm"
         >
           <CalendarCheck className="w-4 h-4 text-[#DFC07C] mb-0.5" />
-          <span>{language === "hi" ? "बुकिंग करें" : "Book Ritual"}</span>
+          <span>{language === "hi" ? "बुकिंग करें" : language === "bn" ? "বুকিং করুন" : "Book Ritual"}</span>
         </Link>
       </div>
     </div>

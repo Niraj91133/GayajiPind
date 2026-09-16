@@ -294,7 +294,7 @@ function StatusChecker() {
 
                   <div className="flex items-center gap-3">
                     <a
-                      href="https://wa.me/919431287650"
+                      href="https://wa.me/919097327088"
                       target="_blank"
                       rel="noreferrer"
                       className="px-5 py-2.5 rounded-full bg-[#25D366] text-white text-xs font-semibold hover:bg-[#20ba5a] transition-all flex items-center gap-1.5"
@@ -303,11 +303,11 @@ function StatusChecker() {
                       <span>WhatsApp</span>
                     </a>
                     <a
-                      href="tel:+919431287650"
+                      href="tel:+919097327088"
                       className="px-5 py-2.5 rounded-full bg-white/10 border border-[#DFC07C] text-white text-xs font-semibold hover:bg-white/20 transition-all flex items-center gap-1.5"
                     >
                       <Phone className="w-4 h-4 text-[#DFC07C]" />
-                      <span>Call Us</span>
+                      <span>Call (+91 90973 27088)</span>
                     </a>
                   </div>
                 </div>

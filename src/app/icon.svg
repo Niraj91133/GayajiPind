@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#241812" />
+      <stop offset="100%" stop-color="#140D0A" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7E7B6" />
+      <stop offset="50%" stop-color="#DFC07C" />
+      <stop offset="100%" stop-color="#B88E3E" />
+    </linearGradient>
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#D9381E" />
+      <stop offset="50%" stop-color="#E26D14" />
+      <stop offset="100%" stop-color="#FFC837" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <rect width="100" height="100" rx="22" fill="url(#bgGrad)" />
+
+  <!-- Outer Ring -->
+  <circle cx="50" cy="50" r="42" stroke="url(#goldGrad)" stroke-width="2.5" fill="none" />
+  <circle cx="50" cy="50" r="38" stroke="url(#goldGrad)" stroke-width="1" stroke-dasharray="2 3" opacity="0.8" fill="none" />
+
+  <!-- Kalash Base -->
+  <path d="M38 70 C 38 62, 42 56, 50 56 C 58 56, 62 62, 62 70 C 62 74, 58 76, 50 76 C 42 76, 38 74, 38 70 Z" fill="url(#goldGrad)" />
+  <path d="M43 56 C 43 54, 45 52, 50 52 C 55 52, 57 54, 57 56 Z" fill="url(#goldGrad)" />
+  <rect x="41" y="50" width="18" height="3" rx="1.5" fill="url(#goldGrad)" />
+
+  <!-- Mango Leaves -->
+  <path d="M42 50 C 34 42, 30 36, 36 32 C 42 36, 44 44, 45 50 Z" fill="#3A5A40" opacity="0.9" />
+  <path d="M58 50 C 66 42, 70 36, 64 32 C 58 36, 56 44, 55 50 Z" fill="#3A5A40" opacity="0.9" />
+  <path d="M46 50 C 44 40, 48 32, 50 28 C 52 32, 56 40, 54 50 Z" fill="#588157" />
+
+  <!-- Flame of Shradha / Diya (Top) -->
+  <path d="M50 18 C 54 26, 57 32, 54 40 C 52 44, 48 44, 46 40 C 43 32, 46 26, 50 18 Z" fill="url(#flameGrad)" />
+  <path d="M50 24 C 52 29, 54 33, 52 38 C 51 40, 49 40, 48 38 C 46 33, 48 29, 50 24 Z" fill="#FFF5C0" />
+
+  <!-- Central Tilak -->
+  <circle cx="50" cy="63" r="3.5" fill="#B85014" />
+</svg>

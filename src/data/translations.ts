@@ -3,8 +3,8 @@ export type Language = "en" | "hi" | "bn";
 export const TRANSLATIONS = {
   en: {
     nav: {
-      brand: "GayajiPind",
-      tagline: "Trusted Digital Pilgrimage Coordinator",
+      brand: "Gaya Ji Pind Sewa",
+      tagline: "Gaya ji Me Pind Daan, Shradha Aur Sewa Ke Sath",
       pindDaan: "Pind Daan",
       rituals: "Rituals",
       gayaJiGuide: "Gaya Ji Guide",
@@ -104,8 +104,8 @@ export const TRANSLATIONS = {
   },
   hi: {
     nav: {
-      brand: "गयाजीपिंड",
-      tagline: "विश्वसनीय डिजिटल तीर्थ समन्वयक",
+      brand: "गया जी पिंड सेवा",
+      tagline: "गया जी में पिंडदान, श्राद्ध और सेवा के साथ",
       pindDaan: "पिंडदान",
       rituals: "अनुष्ठान",
       gayaJiGuide: "गया जी गाइड",
@@ -168,7 +168,7 @@ export const TRANSLATIONS = {
     },
     panditsSection: {
       badge: "प्रामाणिक गयावाल परंपरा",
-      title: "हमारे प्रमाणित तीर्थ पंडितों से मिलें",
+      title: "हमारे गयावाल तीर्थ पुरोहितों से मिलें",
       subtitle: "गया जी के पवित्र गर्भगृहों से जुड़े विद्वान एवं अनुभवी पुरोहित।",
       yearsExp: "वर्षों का वैदिक अनुभव",
       lineage: "परंपरा व वंश",
@@ -205,8 +205,8 @@ export const TRANSLATIONS = {
   },
   bn: {
     nav: {
-      brand: "গয়াজীপিণ্ড",
-      tagline: "নির্ভরযোগ্য ডিজিটাল তীর্থ সমন্বয়ক",
+      brand: "গয়া জী পিণ্ড সেবা",
+      tagline: "গয়া জী তে পিণ্ডদান, শ্রাদ্ধ ও সেবার সাথে",
       pindDaan: "পিণ্ডদান বিধি",
       rituals: "অনুষ্ঠান সমূহ",
       gayaJiGuide: "গয়া তীর্থ গাইড",

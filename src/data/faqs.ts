@@ -54,7 +54,7 @@ export const FAQS_DATA: FAQItem[] = [
     category: "Gotra & Samagri",
     question: "What items or documents do I need to bring to Gaya Ji?",
     hindiQuestion: "गया जी आते समय मुझे क्या सामान या दस्तावेज लाने चाहिए?",
-    answer: "You only need to bring traditional attire (Dhoti/Kurta for men, Saree/Salwar for women), a valid Govt ID, and a mental or written list of departed family members you wish to include in the Sankalp. All sacred Puja Samagri (barley flour, sesame, kusha, gangajal, earthen lamps) is pre-arranged by our Teerth Pandit.",
+    answer: "You only need to bring traditional attire (Dhoti/Kurta for men, Saree/Salwar for women), a valid Govt ID, and a mental or written list of departed family members you wish to include in the Sankalp. All sacred Puja Samagri (barley flour, sesame, kusha, sacred jal, earthen lamps) is pre-arranged by our Teerth Pandit.",
     hindiAnswer: "आपको केवल पारंपरिक वस्त्र, पहचान पत्र और पूर्वजों के नामों की सूची लानी होगी। समस्त पूजा सामग्री हमारे पंडित जी द्वारा पहले से व्यवस्थित रखी जाती है।"
   },
   {

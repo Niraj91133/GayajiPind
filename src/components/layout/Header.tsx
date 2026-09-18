@@ -7,6 +7,7 @@ import { Phone, MessageCircle, Menu, X, ShieldCheck } from "lucide-react";
 import { useLanguage } from "@/components/common/LanguageContext";
 import { LotusMotif } from "@/components/common/MotifDividers";
 import { TalkToPanditModal } from "@/components/common/TalkToPanditModal";
+import { GayaJiPindLogo } from "@/components/common/GayaJiPindLogo";
 
 export function Header() {
   const pathname = usePathname();
@@ -98,23 +99,9 @@ export function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             
-            {/* Authentic Traditional Logo */}
-            <Link href="/" className="flex items-center gap-3 group text-left">
-              <div className="w-10 h-10 rounded-full bg-[#241812] border border-[#9C7A3C]/50 flex items-center justify-center text-[#DFC07C] group-hover:scale-105 transition-transform shadow-sm">
-                <LotusMotif className="w-6 h-6" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-serif text-2xl font-bold tracking-tight text-[#241812] leading-none">
-                  Gayaji<span className="text-[#B85014]">Pind</span>
-                </span>
-                <span className="text-[10px] uppercase tracking-widest text-[#9C7A3C] font-semibold mt-0.5">
-                  {language === "hi"
-                    ? "तीर्थ समन्वयक • गया जी"
-                    : language === "bn"
-                    ? "তীর্থ সমন্বয়ক • গয়া জী"
-                    : "Pilgrimage Coordinator • Gaya Ji"}
-                </span>
-              </div>
+            {/* Authentic Gaya Ji Pind Sewa Logo */}
+            <Link href="/" className="inline-block">
+              <GayaJiPindLogo showTagline={true} size="md" variant="dark" />
             </Link>
 
             {/* Desktop Navigation Links */}

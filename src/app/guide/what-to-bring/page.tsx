@@ -85,7 +85,7 @@ export default function WhatToBringPage() {
               <span className="p-2 bg-white rounded-lg border border-[#E5DCCE]">✓ Pure Barley Flour</span>
               <span className="p-2 bg-white rounded-lg border border-[#E5DCCE]">✓ Black Sesame (Til)</span>
               <span className="p-2 bg-white rounded-lg border border-[#E5DCCE]">✓ Sacred Kusha Grass</span>
-              <span className="p-2 bg-white rounded-lg border border-[#E5DCCE]">✓ Gangajal & Tulsi</span>
+              <span className="p-2 bg-white rounded-lg border border-[#E5DCCE]">✓ Sacred Jal & Tulsi</span>
               <span className="p-2 bg-white rounded-lg border border-[#E5DCCE]">✓ Jaggery & Honey</span>
               <span className="p-2 bg-white rounded-lg border border-[#E5DCCE]">✓ Earthen Diyas</span>
               <span className="p-2 bg-white rounded-lg border border-[#E5DCCE]">✓ Janeu (Sacred Thread)</span>

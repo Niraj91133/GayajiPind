@@ -90,7 +90,7 @@ export default function PindDaanGuidePage() {
                   Vishnupad Mandir Sanctum
                 </h3>
                 <p className="text-xs text-[#5C4033] mt-0.5">
-                  The epicentre of ancestral liberation. Pinds made of pure barley flour, ghee, honey, and gangajal are reverently placed upon Lord Vishnu’s rock footprints.
+                  The epicentre of ancestral liberation. Pinds made of pure barley flour, ghee, honey, and sacred jal are reverently placed upon Lord Vishnu’s rock footprints.
                 </p>
               </div>
             </div>

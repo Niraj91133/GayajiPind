@@ -7,6 +7,7 @@ import { useLanguage } from "@/components/common/LanguageContext";
 import { LotusMotif, SacredDivider } from "@/components/common/MotifDividers";
 import { CITIES_DATA } from "@/data/cities";
 import { NRI_COUNTRIES_DATA } from "@/data/nriCountries";
+import { GayaJiPindLogo } from "@/components/common/GayaJiPindLogo";
 
 export function Footer() {
   const { language } = useLanguage();
@@ -19,18 +20,8 @@ export function Footer() {
           
           {/* Col 1: Brand & Philosophy */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-3 mb-4 group">
-              <div className="w-10 h-10 rounded-full bg-[#38261D] border border-[#9C7A3C]/60 flex items-center justify-center text-[#DFC07C]">
-                <LotusMotif className="w-6 h-6" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-serif text-2xl font-bold tracking-tight text-white leading-none">
-                  Gayaji<span className="text-[#DFC07C]">Pind</span>
-                </span>
-                <span className="text-[10px] uppercase tracking-widest text-[#D8D0C0] mt-0.5">
-                  {language === "hi" ? "तीर्थ समन्वयक • गया जी" : "Pilgrimage Coordinator • Gaya Ji"}
-                </span>
-              </div>
+            <Link href="/" className="inline-block mb-4">
+              <GayaJiPindLogo showTagline={true} size="md" variant="light" />
             </Link>
 
             <p className="text-xs sm:text-sm text-[#D8D0C0] leading-relaxed mb-6 max-w-md">
@@ -206,9 +197,22 @@ export function Footer() {
 
         {/* Bottom Disclaimer & Copyright */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#A89F95]">
-          <p>
-            © {new Date().getFullYear()} GayajiPind. Traditional Pilgrimage Coordination for Gaya Ji, Bihar. All traditional rights reserved.
-          </p>
+          <div className="flex flex-col gap-1 text-center md:text-left">
+            <p>
+              © {new Date().getFullYear()} Gaya Ji Pind Sewa. Gaya ji Me Pind Daan, Shradha Aur Sewa Ke Sath.
+            </p>
+            <p className="text-[11px] text-[#A89F95]">
+              Managed and Developed By{" "}
+              <a
+                href="https://www.ganeshadigiads.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#DFC07C] font-semibold hover:underline transition-colors"
+              >
+                GDAs - Ganesha Digital Ads
+              </a>
+            </p>
+          </div>
           <div className="flex items-center gap-6">
             <Link href="/trust" className="hover:text-white transition-colors">
               Privacy Policy

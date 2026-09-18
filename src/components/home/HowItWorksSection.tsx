@@ -48,7 +48,7 @@ export function HowItWorksSection() {
             {language === "hi" ? "सरल एवं स्पष्ट प्रक्रिया" : "Simple 4-Step Pilgrimage"}
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#241812] tracking-tight">
-            {language === "hi" ? "यह व्यवस्था कैसे कार्य करती है?" : "How GayajiPind Coordinates Your Visit"}
+            {language === "hi" ? "यह व्यवस्था कैसे कार्य करती है?" : "How Gaya Ji Pind Sewa Coordinates Your Visit"}
           </h2>
           <p className="text-xs sm:text-sm text-[#7A6F67] mt-3">
             {language === "hi"

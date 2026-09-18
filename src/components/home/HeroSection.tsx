@@ -10,21 +10,21 @@ const HERO_SLIDES = [
   {
     id: 1,
     image: "/images/pandit-hero.jpg",
-    alt: "Authentic Gayawal Teerth Purohit in Gaya Ji",
+    alt: "Authentic Gayawal Ratan Ji in Gaya Ji",
     badge: {
-      hi: "गयावाल तीर्थ पुरोहित • विष्णुपद",
-      en: "Verified Gayawal Purohit • Vishnupad",
-      bn: "প্রমাণিত গয়াবাল পুরোহিত • বিষ্ণুপদ",
+      hi: "प्रामाणिक गयावाल रतन जी • विष्णुपद",
+      en: "Authentic Gayawal Ratan Ji • Vishnupad",
+      bn: "প্রামাণিক গয়াবাল রতন জী • বিষ্ণুপদ",
     },
     tag: {
-      hi: "प्रामाणिक गयावाल परंपरा",
-      en: "Generational Gayawal Lineage",
-      bn: "ঐতিহ্যবাহী গয়াবাল বংশ",
+      hi: "प्रामाणिक गयावाल रतन जी",
+      en: "Authentic Gayawal Ratan Ji",
+      bn: "প্রামাণিক গয়াবাল রতন জী",
     },
     caption: {
-      hi: "विद्वान तीर्थ पुरोहितों के सानिध्य में शास्त्रोक्त पिंडदान व गोत्र संकल्प",
-      en: "Sacred ancestral oblations and authentic Gotra Sankalp with revered Purohits",
-      bn: "বিদ্বান তীর্থ পুরোহিতদের সান্নিধ্যে শাস্ত্রীয় পিণ্ডদান ও গোত্র সঙ্কল্প",
+      hi: "विधिपूर्वक पिंडदान • नारायण बलि • त्रिपिंडी श्राद्ध • पितृ तर्पण",
+      en: "Vedic Pind Daan • Narayan Bali • Tripindi Shradh • Pitru Tarpan",
+      bn: "বিধিপূর্বক পিণ্ডদান • নারায়ণ বলি • ত্রিপিন্ডী শ্রাদ্ধ • পিতৃ তর্পণ",
     },
   },
   {
@@ -42,9 +42,9 @@ const HERO_SLIDES = [
       bn: "পবিত্র বিষ্ণুপদ ক্ষেত্র",
     },
     caption: {
-      hi: "भगवान श्री विष्णु के चरण चिन्ह पर पिंडदान से 21 पीढ़ियों के पितरों को मोक्ष",
-      en: "Ancestral rites at Lord Vishnu's sacred footprint bestow eternal liberation",
-      bn: "ভগবান শ্রী বিষ্ণুর পদপদ্মে পিণ্ডদানে পূর্বপুরুষদের চিরন্তন মোক্ষলাভ",
+      hi: "भगवान श्री विष्णु के चरण चिन्ह पर पिंडदान से 7 पीढ़ियों के पितरों को मोक्ष",
+      en: "Ancestral rites at Lord Vishnu's sacred footprint bestow eternal liberation to 7 generations",
+      bn: "ভগবান শ্রী বিষ্ণুর পদপদ্মে পিণ্ডদানে ৭ বংশ-পুরুষের চিরন্তন মোক্ষলাভ",
     },
   },
   {
@@ -358,10 +358,10 @@ export function HeroSection() {
               <span className="w-1.5 h-1.5 rounded-full bg-[#9C7A3C]" />
               <span>
                 {language === "hi"
-                  ? "समन्वयक सहायता: +91 90973 27088 • सुबह 7:00 से रात 9:00 बजे तक"
+                  ? "समन्वयक सहायता: +91 90973 27088 • 24 घंटे उपलब्ध"
                   : language === "bn"
-                  ? "সমন্বয়ক হেল্পলাইন: +91 90973 27088 • সকাল ৭:০০ থেকে রাত ৯:০০ টা পর্যন্ত"
-                  : "Coordinator Helpline: +91 90973 27088 • 7:00 AM to 9:00 PM Daily"}
+                  ? "সমন্বয়ক হেল্পলাইন: +91 90973 27088 • ২৪ ঘণ্টা উপলব্ধ"
+                  : "Coordinator Helpline: +91 90973 27088 • Available 24 Hours"}
               </span>
             </div>
           </div>

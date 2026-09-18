@@ -125,7 +125,7 @@ export function RitualDetailView({ ritual }: { ritual: Ritual }) {
             </p>
 
             <div className="p-4 rounded-2xl bg-[#FAF5E6] border border-[#DFC07C]/50 text-xs text-[#5C4033] leading-relaxed">
-              <strong>Vedic Significance:</strong> Gaya Ji is sanctified as the spiritual intersection where offering Pinda delivers departed ancestors across 21 generations into eternal peace (Moksha).
+              <strong>Vedic Significance:</strong> Gaya Ji is sanctified as the spiritual intersection where offering Pinda delivers departed ancestors across 7 generations into eternal peace (Moksha).
             </div>
           </div>
 

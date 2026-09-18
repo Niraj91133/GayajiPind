@@ -27,10 +27,10 @@ export function MeetPanditsSection() {
           </span>
           <h2 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-bold text-[#241812] tracking-tight">
             {language === "hi"
-              ? "हमारे प्रमाणित तीर्थ पुरोहित"
+              ? "हमारे गयावाल तीर्थ पुरोहित"
               : language === "bn"
-              ? "আমাদের প্রমাণিত তীর্থ পুরোহিতগণ"
-              : "Our Verified Teerth Pandits"}
+              ? "আমাদের প্রামাণিক গয়াবাল তীর্থ পুরোহিতগণ"
+              : "Our Verified Gayawal Teerth Pandits"}
           </h2>
           <p className="text-xs sm:text-sm text-[#7A6F67] mt-3 max-w-2xl mx-auto">
             {language === "hi"

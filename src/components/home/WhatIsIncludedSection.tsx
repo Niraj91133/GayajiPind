@@ -19,11 +19,11 @@ export function WhatIsIncludedSection() {
     },
     {
       title: language === "hi" ? "समस्त वैदिक पूजा सामग्री" : "Complete Vedic Puja Samagri",
-      desc: language === "hi" ? "शुद्ध जौ का आटा, काले तिल, कुश, गंगाजल, तुलसी एवं मिट्टी के दीप।" : "Pure barley flour, black sesame, kusha grass, gangajal, and lamps."
+      desc: language === "hi" ? "शुद्ध जौ का आटा, काले तिल, कुश, पावन जल, तुलसी एवं मिट्टी के दीप।" : "Pure barley flour, black sesame, kusha grass, sacred jal, and lamps."
     },
     {
       title: language === "hi" ? "गोत्र एवं कुल परंपरा अनुसार संकल्प" : "Gotra & Ancestral Lineage Sankalp",
-      desc: language === "hi" ? "आपकी कुल-परंपरा अनुसार 21 पीढ़ियों का विधिपूर्वक नाम उच्चारण।" : "Proper Vedic invocation tailored to your family's Gotra and ancestors."
+      desc: language === "hi" ? "आपकी कुल-परंपरा अनुसार 7 पीढ़ियों का विधिपूर्वक नाम उच्चारण।" : "Proper Vedic invocation tailored to your family's Gotra and 7 generations of ancestors."
     }
   ];
 
@@ -75,7 +75,7 @@ export function WhatIsIncludedSection() {
               <div className="flex items-center gap-2 pb-3.5 sm:pb-4 mb-5 sm:mb-6 border-b border-[#E8E2D5]">
                 <CheckCircle2 className="w-5 h-5 text-[#B85014]" />
                 <h3 className="font-serif text-lg sm:text-xl font-bold text-[#241812]">
-                  {language === "hi" ? "मानक अनुष्ठान व्यवस्था में सम्मिलित" : "Standard Pilgrimage Inclusions"}
+                  {language === "hi" ? "Pind Daan व्यवस्था में सम्मिलित" : "Standard Pind Daan Inclusions"}
                 </h3>
               </div>
 

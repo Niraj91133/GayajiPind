@@ -108,9 +108,9 @@ export function TalkToPanditModal({ isOpen, onClose, defaultRitual = "General Gu
                 </h3>
                 <p className="text-[#7A6F67] text-xs mt-1">
                   {language === "hi"
-                    ? "यदि आप अनुष्ठान या विधि को लेकर असमंजस में हैं, तो सीधे हमारे अनुभवी पंडित जी से मार्गदर्शन प्राप्त करें।"
+                    ? "यदि आप पिंडदान या विधि को लेकर असमंजस में हैं, तो सीधे हमारे अनुभवी पंडित जी से मार्गदर्शन प्राप्त करें।"
                     : language === "bn"
-                    ? "কোন অনুষ্ঠানটি করবেন বুঝতে না পারলে সরাসরি আমাদের অভিজ্ঞ পুরোহিতের সাথে কথা বলুন।"
+                    ? "কোন পিণ্ডদানটি করবেন বুঝতে না পারলে সরাসরি আমাদের অভিজ্ঞ পুরোহিতের সাথে কথা বলুন।"
                     : "Not sure which ritual is right? Speak directly with an experienced Teerth Purohit in Gaya Ji."}
                 </p>
               </div>

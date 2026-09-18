@@ -26,7 +26,7 @@ export function Footer() {
 
             <p className="text-xs sm:text-sm text-[#D8D0C0] leading-relaxed mb-6 max-w-md">
               {language === "hi"
-                ? "गयाजीपिंड परिवारों को गया जी (बिहार) में पिंडदान, त्रिपिंडी श्राद्ध एवं नारायण बलि जैसे पवित्र अनुष्ठानों को प्रमाणित तीर्थ पुरोहितों एवं व्यक्तिगत सहायता के साथ संपन्न कराने में सहायता करता है।"
+                ? "गयाजीपिंड परिवारों को गया जी (बिहार) में पिंडदान, त्रिपिंडी श्राद्ध एवं नारायण बलि जैसे पवित्र पिंडदान सेवाओं को प्रमाणित तीर्थ पुरोहितों एवं व्यक्तिगत सहायता के साथ संपन्न कराने में सहायता करता है।"
                 : language === "bn"
                 ? "গয়াজীপিণ্ড পরিবারবর্গকে গয়া জী (বিহার)-তে পিণ্ডদান, ত্রিপিন্ডী শ্রাদ্ধ ও নারায়ণ বলির মতো পবিত্র বৈদিক অনুষ্ঠান বিশ্বস্ত পুরোহিত ও ব্যক্তিগত সহায়তার মাধ্যমে সম্পন্ন করতে সাহায্য করে।"
                 : "GayajiPind is a traditional digital pilgrimage coordinator dedicated to helping families arrange sacred Pind Daan and ancestral rites in Gaya Ji, Bihar with verified Teerth Pandits and dedicated human coordinators."}
@@ -51,7 +51,7 @@ export function Footer() {
           {/* Col 2: Core Rituals */}
           <div>
             <h4 className="font-serif text-base font-semibold text-[#DFC07C] mb-4">
-              {language === "hi" ? "पवित्र अनुष्ठान" : language === "bn" ? "পবিত্র অনুষ্ঠান" : "Sacred Rituals"}
+              {language === "hi" ? "पवित्र पिंडदान" : language === "bn" ? "পবিত্র পিণ্ডদান" : "Sacred Rituals"}
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm text-[#D8D0C0]">
               <li>

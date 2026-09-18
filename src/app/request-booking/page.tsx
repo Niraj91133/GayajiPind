@@ -142,7 +142,7 @@ function BookingForm() {
   };
 
   const stepsList = [
-    { num: 1, label: language === "hi" ? "01 अनुष्ठान" : "01 Ritual" },
+    { num: 1, label: language === "hi" ? "01 पिंडदान" : "01 Ritual" },
     { num: 2, label: language === "hi" ? "02 तारीख" : "02 Date" },
     { num: 3, label: language === "hi" ? "03 सदस्य" : "03 People" },
     { num: 4, label: language === "hi" ? "04 विवरण" : "04 Details" },
@@ -220,7 +220,7 @@ function BookingForm() {
                   {language === "hi" ? "चयनित विवरण" : "Summary Preview"}:
                 </span>
                 <div className="flex justify-between">
-                  <span className="text-[#6E6963]">{language === "hi" ? "अनुष्ठान:" : "Ritual:"}</span>
+                  <span className="text-[#6E6963]">{language === "hi" ? "पिंडदान:" : "Ritual:"}</span>
                   <span className="font-semibold text-[#2A1810] text-right">
                     {ritual === "not-sure"
                       ? "Guidance Needed"
@@ -262,11 +262,11 @@ function BookingForm() {
                 <div className="space-y-6">
                   <div>
                     <h2 className="font-serif text-2xl font-bold text-[#2A1810]">
-                      {language === "hi" ? "आप कौन सा अनुष्ठान कराना चाहते हैं?" : "What would you like to perform?"}
+                      {language === "hi" ? "आप कौन सा पिंडदान कराना चाहते हैं?" : "What would you like to perform?"}
                     </h2>
                     <p className="text-xs text-[#6E6963] mt-1">
                       {language === "hi"
-                        ? "गया जी में संपन्न कराए जाने वाले मुख्य पारंपरिक वैदिक अनुष्ठान।"
+                        ? "गया जी में संपन्न कराए जाने वाले मुख्य पारंपरिक वैदिक पिंडदान।"
                         : "Select the sacred ritual for your family or choose guidance if unsure."}
                     </p>
                   </div>
@@ -328,7 +328,7 @@ function BookingForm() {
                           {language === "hi" ? "मुझे निश्चित पता नहीं — पंडित जी से मार्गदर्शन चाहिए" : "I'm Not Sure — Help Me Decide"}
                         </h4>
                         <p className="text-xs text-[#6E6963]">
-                          {language === "hi" ? "समन्वयक आपकी पारिवारिक परंपरा समझकर अनुष्ठान तय करेंगे।" : "Our Teerth Pandit will guide you based on your family background."}
+                          {language === "hi" ? "समन्वयक आपकी पारिवारिक परंपरा समझकर पिंडदान विधि तय करेंगे।" : "Our Teerth Pandit will guide you based on your family background."}
                         </p>
                       </div>
                     </div>
@@ -423,7 +423,7 @@ function BookingForm() {
                 <div className="space-y-6">
                   <div>
                     <h2 className="font-serif text-2xl font-bold text-[#2A1810]">
-                      {language === "hi" ? "कुल कितने सदस्य अनुष्ठान में भाग लेंगे?" : "How many people are performing the ritual?"}
+                      {language === "hi" ? "कुल कितने सदस्य पिंडदान में भाग लेंगे?" : "How many people are performing the ritual?"}
                     </h2>
                     <p className="text-xs text-[#6E6963] mt-1">
                       {language === "hi"
@@ -759,7 +759,7 @@ function BookingForm() {
                   {/* Summary Card */}
                   <div className="bg-[#FAF7F2] rounded-2xl border border-[#DFC07C]/50 p-6 space-y-3.5 text-xs sm:text-sm">
                     <div className="flex justify-between py-1.5 border-b border-[#E5DCCE]">
-                      <span className="text-[#6E6963]">{language === "hi" ? "अनुष्ठान (Ritual):" : "Ritual:"}</span>
+                      <span className="text-[#6E6963]">{language === "hi" ? "पिंडदान (Pind Daan):" : "Ritual:"}</span>
                       <strong className="text-[#2A1810] font-serif font-bold text-right">
                         {ritual === "not-sure" ? "Vedic Guidance by Pandit" : RITUALS_DATA.find((r) => r.slug === ritual)?.name}
                       </strong>
@@ -824,7 +824,7 @@ function BookingForm() {
                       {language === "hi" ? "हम आपसे संपर्क करेंगे:" : "We will contact you to confirm:"}
                     </p>
                     <ul className="list-disc pl-4 space-y-0.5">
-                      <li>{language === "hi" ? "अनुष्ठान एवं संकल्प का संपूर्ण विवरण" : "Exact ritual and Sankalp requirements"}</li>
+                      <li>{language === "hi" ? "पिंडदान एवं संकल्प का संपूर्ण विवरण" : "Exact ritual and Sankalp requirements"}</li>
                       <li>{language === "hi" ? "होटल, वाहन अथवा वरिष्ठ नागरिक व्यवस्था" : "Hotel stay, cab pickup, or senior assistance"}</li>
                       <li>{language === "hi" ? "प्रमाणित तीर्थ पंडित का आवंटन" : "Assignment of verified Teerth Pandit"}</li>
                       <li>{language === "hi" ? "सेवा एवं दक्षिणा शुल्क का पारदर्शी विवरण" : "Transparent final service details"}</li>

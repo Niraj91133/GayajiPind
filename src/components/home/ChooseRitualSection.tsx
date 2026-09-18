@@ -20,23 +20,23 @@ export function ChooseRitualSection() {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="text-xs uppercase tracking-widest text-[#9C7A3C] font-semibold block mb-2">
             {language === "hi"
-              ? "शास्त्रोक्त वैदिक अनुष्ठान"
+              ? "शास्त्रोक्त वैदिक पिंडदान"
               : language === "bn"
-              ? "পবিত্র বৈদিক অনুষ্ঠান"
+              ? "পবিত্র বৈদিক পিণ্ডদান"
               : "Sacred Vedic Ceremonies"}
           </span>
           <h2 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-bold text-[#241812] tracking-tight">
             {language === "hi"
-              ? "आप कौन सा अनुष्ठान कराना चाहते हैं?"
+              ? "आप कौन सा पिंडदान कराना चाहते हैं?"
               : language === "bn"
-              ? "আপনি কোন অনুষ্ঠানটি সম্পন্ন করতে চান?"
+              ? "আপনি কোন পিণ্ডদানটি সম্পন্ন করতে চান?"
               : "Choose Your Sacred Ritual"}
           </h2>
           <p className="text-xs sm:text-sm text-[#7A6F67] mt-3 leading-relaxed max-w-2xl mx-auto">
             {language === "hi"
-              ? "अपने परिवार की कुल परंपरा एवं आवश्यकतानुसार गया जी के पारंपरिक वैदिक अनुष्ठानों में से चुनें।"
+              ? "अपने परिवार की कुल परंपरा एवं आवश्यकतानुसार गया जी के पारंपरिक वैदिक पिंडदान में से चुनें।"
               : language === "bn"
-              ? "আপনার পরিবারের নিয়ম ও প্রয়োজন অনুযায়ী গয়া জী-র উপযুক্ত বৈদিক অনুষ্ঠান নির্বাচন করুন।"
+              ? "আপনার পরিবারের নিয়ম ও প্রয়োজন অনুযায়ী গয়া জী-র উপযুক্ত বৈদিক পিণ্ডদান নির্বাচন করুন।"
               : "Select from traditional Gaya Ji Vedic rituals tailored to your family's ancestral traditions."}
           </p>
           <SacredDivider className="my-5" />
@@ -130,9 +130,9 @@ export function ChooseRitualSection() {
           <span>←</span>
           <span>
             {language === "hi"
-              ? "अन्य अनुष्ठान देखने हेतु स्वाइप करें"
+              ? "अन्य पिंडदान सेवाएं देखने हेतु स्वाइप करें"
               : language === "bn"
-              ? "অন্যান্য অনুষ্ঠান দেখতে সোয়াইপ করুন"
+              ? "অন্যান্য পিণ্ডদান দেখতে সোয়াইপ করুন"
               : "Swipe to see all rituals"}
           </span>
           <span>→</span>
@@ -151,7 +151,7 @@ export function ChooseRitualSection() {
               </span>
               <h4 className="font-serif text-xl sm:text-2xl font-bold text-[#241812]">
                 {language === "hi"
-                  ? "समझ नहीं आ रहा कि आपके परिवार के लिए कौन सा अनुष्ठान उचित है?"
+                  ? "समझ नहीं आ रहा कि आपके परिवार के लिए कौन सा पिंडदान उचित है?"
                   : language === "bn"
                   ? "বুঝতে পারছেন না আপনার পরিবারের জন্য কোনটি উপযুক্ত?"
                   : "Not sure which ritual is right for your family?"}

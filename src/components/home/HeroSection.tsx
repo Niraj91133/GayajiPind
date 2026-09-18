@@ -92,9 +92,9 @@ const HERO_SLIDES = [
     image: "/images/pind-daan-1day.jpg",
     alt: "Traditional Vedic Pind Daan Rituals",
     badge: {
-      hi: "शास्त्रोक्त वैदिक अनुष्ठान",
-      en: "Authentic Vedic Ceremonies",
-      bn: "শাস্ত্রীয় বৈদিক অনুষ্ঠান",
+      hi: "शास्त्रोक्त वैदिक पिंडदान",
+      en: "Authentic Vedic Pind Daan",
+      bn: "শাস্ত্রীয় বৈদিক পিণ্ডদান",
     },
     tag: {
       hi: "सम्पूर्ण वैदिक व्यवस्था",
@@ -294,10 +294,10 @@ export function HeroSection() {
                 <CheckCircle2 className="w-4 h-4 text-[#B85014] flex-shrink-0" />
                 <span className="font-semibold text-[#241812] text-[11px] sm:text-xs">
                   {language === "hi"
-                    ? "शास्त्रोक्त वैदिक संकल्प"
+                    ? "शास्त्रोक्त वैदिक पिंडदान"
                     : language === "bn"
-                    ? "শাস্ত্রীয় গোত্র সঙ্কল্প"
-                    : "Authentic Gotra Sankalp"}
+                    ? "শাস্ত্রীয় বৈদিক পিণ্ডদান"
+                    : "Authentic Vedic Pind Daan"}
                 </span>
               </div>
               <div className="flex items-center gap-2 p-2.5 sm:p-3 rounded-xl bg-white border border-[#E8E2D5] shadow-xs">

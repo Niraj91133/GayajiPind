@@ -5,9 +5,9 @@ export const FAQS_DATA: FAQItem[] = [
     id: "faq-1",
     category: "Rituals",
     question: "Which ritual should I choose for my family?",
-    hindiQuestion: "मुझे अपने परिवार के लिए कौन सा अनुष्ठान चुनना चाहिए?",
+    hindiQuestion: "मुझे अपने परिवार के लिए कौन सा पिंडदान चुनना चाहिए?",
     answer: "If you have limited time and wish to complete core ancestral rites, choose the 1-Day Pind Daan. If you want the full Vedic pilgrimage covering Falgu, Vishnupad, and Pretshila without rush, choose the 3-Day Complete Pind Daan. For unresolved family hurdles or Pitru Dosha, Tripindi Shradh is recommended. If you are unsure, click 'Talk to a Pandit' and our coordinator will guide you based on your family traditions.",
-    hindiAnswer: "यदि आपके पास समय सीमित है और मुख्य अनुष्ठान करना चाहते हैं, तो 1-दिवसीय पिंडदान चुनें। यदि आप बिना जल्दबाजी के सम्पूर्ण तीर्थ परिक्रमा करना चाहते हैं, तो 3-दिवसीय पिंडदान चुनें। यदि आप असमंजस में हैं, तो 'पंडित जी से बात करें' पर क्लिक करें।"
+    hindiAnswer: "यदि आपके पास समय सीमित है और मुख्य पिंडदान कर्म करना चाहते हैं, तो 1-दिवसीय पिंडदान चुनें। यदि आप बिना जल्दबाजी के सम्पूर्ण तीर्थ परिक्रमा करना चाहते हैं, तो 3-दिवसीय पिंडदान चुनें। यदि आप असमंजस में हैं, तो 'पंडित जी से बात करें' पर क्लिक करें।"
   },
   {
     id: "faq-2",
@@ -21,7 +21,7 @@ export const FAQS_DATA: FAQItem[] = [
     id: "faq-3",
     category: "Booking",
     question: "How will I know the cost of the rituals and services?",
-    hindiQuestion: "अनुष्ठान और सेवाओं का शुल्क मुझे कैसे पता चलेगा?",
+    hindiQuestion: "पिंडदान और सेवाओं का शुल्क मुझे कैसे पता चलेगा?",
     answer: "To respect the sacred traditional nature of the pilgrimage and ensure services are tailored to your exact family size and assistance needs, we do not show public fixed prices. Once you submit your booking request, our dedicated coordinator will contact you directly on WhatsApp or Phone to explain all inclusions and clear service charges before any confirmation.",
     hindiAnswer: "पवित्र परंपरा के सम्मान एवं आपकी पारिवारिक आवश्यकताओं के अनुसार, हम वेबसाइट पर सार्वजनिक मूल्य नहीं दर्शाते। आपके अनुरोध सबमिट करने के बाद हमारे समन्वयक आपसे संपर्क कर संपूर्ण विवरण स्पष्ट करेंगे।"
   },

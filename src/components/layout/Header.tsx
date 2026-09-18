@@ -22,7 +22,7 @@ export function Header() {
     },
     {
       href: "/rituals",
-      label: language === "hi" ? "अनुष्ठान" : language === "bn" ? "অনুষ্ঠান সমূহ" : "Rituals",
+      label: language === "hi" ? "पिंडदान सेवाएं" : language === "bn" ? "পিণ্ডদান সমূহ" : "Sacred Rituals",
     },
     {
       href: "/guide",

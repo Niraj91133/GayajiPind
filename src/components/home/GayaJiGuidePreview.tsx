@@ -128,7 +128,7 @@ export function GayaJiGuidePreview() {
             <Clock className="w-5 h-5 text-[#9C7A3C] flex-shrink-0" />
             <div>
               <h4 className="text-xs font-bold text-[#241812]">
-                {language === "hi" ? "अनुष्ठान समय" : "Ritual Timings"}
+                {language === "hi" ? "पिंडदान समय" : "Ritual Timings"}
               </h4>
               <p className="text-[11px] text-[#7A6F67]">
                 {language === "hi" ? "प्रातः 6:00 AM से अनुकूल मुहूर्त" : "Morning Vedic windows"}

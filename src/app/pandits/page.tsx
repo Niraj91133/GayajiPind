@@ -37,7 +37,7 @@ export default function PanditsDirectoryPage() {
         </div>
 
         {/* Pandits Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-8 mb-16">
           {PANDITS_DATA.map((pandit) => (
             <div
               key={pandit.id}

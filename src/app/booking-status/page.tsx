@@ -63,7 +63,7 @@ const PIPELINE_STAGES: { key: BookingStatus; label: string; hindiLabel: string; 
   {
     key: "COMPLETED",
     label: "Ritual Completed",
-    hindiLabel: "अनुष्ठान पूर्ण",
+    hindiLabel: "पिंडदान पूर्ण",
     desc: "Pilgrimage rites completed with Suphal blessings."
   }
 ];

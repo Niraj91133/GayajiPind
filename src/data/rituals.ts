@@ -8,7 +8,7 @@ export const RITUALS_DATA: Ritual[] = [
     hindiName: "1-दिवसीय पिंडदान",
     bengaliName: "১-দিনের পিণ্ডদান",
     tagline: "Focused single-day ancestral rites across the 3 primary sacred points of Gaya Ji",
-    hindiTagline: "गया जी के 3 मुख्य वेदियों पर एक दिवसीय श्राद्ध एवं पिंडदान अनुष्ठान",
+    hindiTagline: "गया जी के 3 मुख्य वेदियों पर एक दिवसीय श्राद्ध एवं पिंडदान कर्म",
     bengaliTagline: "গয়ার প্রধান ৩টি পবিত্র বেদীতে এক দিনের শাস্ত্রীয় পিণ্ডদান",
     shortDescription: "For families looking for a focused, comprehensive Pind Daan ritual in Gaya Ji in a single day.",
     fullDescription: "The 1-Day Pind Daan is specifically structured for devotees with limited time who wish to perform the sacred ancestral tarpan and pind daan at the three most crucial tirthas of Gaya Ji: Falgu River, Vishnupad Temple, and the eternal Akshayavat tree. Under the direct guidance of an experienced Teerth Pandit, all sankalp, pinda offering, and pitru blessings are meticulously completed according to Vedic scriptures.",
@@ -82,38 +82,38 @@ export const RITUALS_DATA: Ritual[] = [
     hindiName: "3-दिवसीय सम्पूर्ण पिंडदान",
     bengaliName: "৩-দিনের সম্পূর্ণ পিণ্ডদান",
     tagline: "The full multi-day Vedic pilgrimage covering Falgu, Vishnupad, Pretshila, and historical Vedis",
-    hindiTagline: "सम्पूर्ण वैदिक तीर्थ यात्रा - फल्गु, विष्णुपद, प्रेतशिला एवं ऐतिहासिक वेदियों पर",
-    bengaliTagline: "প্রেতশিলা, রামশিলা সহ ৪৫টি বেদীর সম্পূর্ণ বৈদিক তীর্থ পরিক্রমা",
-    shortDescription: "For families who want the complete, traditional multi-day pilgrimage experience across all sacred spots of Gaya Ji.",
-    fullDescription: "The 3-Day Complete Pind Daan is the authentic, comprehensive pilgrimage tradition of Gaya Kshetra. Over three serene days, your family completes the full Vedic circuit including the sacred Falgu Ghats, Vishnupad, Akshayavat, the elevated Pretshila hill for unliberated souls, Brahmakund, and key historical vedis. This allows ample time for deep contemplation, uninterrupted rituals, and peaceful family participation without rush.",
+    hindiTagline: "सम्पूर्ण वैदिक तीर्थ यात्रा - फल्गु, विष्णुपद, प्रेतशिला, सीताकुंड, रामगया, गयाकूप, गयासीर, सोलहवेदी, सूर्यकुंड, वैतरणी एवं अक्षयवट वेदियों पर",
+    bengaliTagline: "ফল্গু, বিষ্ণুপদ, প্রেতশিলা, সীতাকুণ্ড, রামগয়া, গয়াকূপ, গয়াশির, ষোড়শবেদী, সূর্যকুণ্ড, বৈতরণী ও অক্ষয়বট সহ সকল বেদীর পূর্ণ তীর্থ পরিক্রমা",
+    shortDescription: "For families who want the complete, traditional multi-day pilgrimage experience across all 45+ sacred Vedis including Sitakund, Ramgaya, Gayakoop, Gayasira, Solahvedi, Suryakund, Vaitarni, and Akshayavat.",
+    fullDescription: "The 3-Day Complete Pind Daan is the authentic, comprehensive pilgrimage tradition of Gaya Kshetra. Over three serene days, your family completes the full Vedic circuit across all main sanctums: Falgu Ghats, Vishnupad, Sitakund, Ramgaya, Gayakoop, Gayasira, Solahvedi, Suryakund, Vaitarni, Pretshila, and the immortal Akshayavat tree. This allows ample time for deep contemplation, uninterrupted rituals, and peaceful family participation without rush.",
     duration: "3 Days (Full Pilgrimage Circuit)",
     whoIsItFor: [
-      "Devotees seeking the full, traditional Gaya Tirtha Vidhi without haste",
+      "Devotees seeking the full, traditional Gaya Tirtha Vidhi across all 45+ sacred vedis",
       "Families fulfilling long-standing ancestral vows or solemn sankalpas",
-      "Pilgrims desiring the deep spiritual peace of covering both Vishnupad and Pretshila",
+      "Pilgrims desiring the deep spiritual peace of covering Vishnupad, Pretshila, Sitakund, and Akshayavat",
       "Senior family groups who prefer an unhurried, comfortable pilgrimage pace"
     ],
     whatHappens: [
       {
-        title: "Day 1: Falgu Snan, Sankalp & Vishnupad",
-        description: "Sacred cleansing at Falgu River, initiation of the 3-day Maha-Sankalp, and detailed 16-pinda offering at Vishnupad sanctum.",
-        location: "Falgu River & Vishnupad"
+        title: "Day 1: Falgu Snan, Vishnupad, Sitakund & Ramgaya",
+        description: "Sacred cleansing at Falgu River, initiation of Sankalp, 16-pinda offering at Vishnupad sanctum, followed by Sitakund and Ramgaya Pind Daan.",
+        location: "Falgu, Vishnupad, Sitakund & Ramgaya"
       },
       {
-        title: "Day 2: Pretshila & Brahmakund Shradh",
-        description: "Ascent to Pretshila (via paved steps/palanquin or base) for special sesame/sattu pinda daan dedicated to ancestral peace, followed by Brahmakund tarpan.",
-        location: "Pretshila Hill & Brahmakund"
+        title: "Day 2: Pretshila, Gayakoop, Gayasira & Solahvedi Shradh",
+        description: "Ascent to Pretshila hill for unliberated souls, followed by traditional pinda offerings at Gayakoop, Gayasira, and Solahvedi sacred spots.",
+        location: "Pretshila, Gayakoop, Gayasira & Solahvedi"
       },
       {
-        title: "Day 3: Akshayavat, Gayawal Suphal & Completion",
-        description: "Final pinda offering under the immortal Akshayavat tree, receiving the sacred 'Suphal' (eternal fulfillment blessing) from Gayawal Teerth Purohits.",
-        location: "Akshayavat & Gayawal Sabha"
+        title: "Day 3: Suryakund, Vaitarni, Akshayavat & Suphal",
+        description: "Pinda offering at Suryakund, sacred Vaitarni Gau-daan/tarpan, final rites under the immortal Akshayavat tree, and receiving 'Suphal' blessings from Gayawal Pandits.",
+        location: "Suryakund, Vaitarni, Akshayavat & Gayawal Sabha"
       }
     ],
     included: [
       "Personal Teerth Pandit assigned exclusively to your family for all 3 days",
-      "Full pilgrimage itinerary coordination and continuous local escort",
-      "All Vedic Puja Samagri for daily rituals at Falgu, Vishnupad, and Pretshila",
+      "Full pilgrimage itinerary coordination covering Falgu, Vishnupad, Pretshila, Sitakund, Ramgaya, Gayakoop, Gayasira, Solahvedi, Suryakund, Vaitarni, & Akshayavat",
+      "All Vedic Puja Samagri & Pinda materials provided at each vedi",
       "Temple entry darshan coordination across all visited shrines"
     ],
     optional: [
@@ -151,7 +151,7 @@ export const RITUALS_DATA: Ritual[] = [
     hindiName: "त्रिपिंडी श्राद्ध",
     bengaliName: "ত্রিপিন্ডী শ্রাদ্ধ",
     tagline: "Dedicated Vedic ritual to appease ancestors across the three realms (Satva, Rajas, Tamas)",
-    hindiTagline: "तीनों लोकों में अतृप्त पितरों की शांति एवं पितृदोष निवारण हेतु विशेष वैदिक अनुष्ठान",
+    hindiTagline: "तीनों लोकों में अतृप्त पितरों की शांति एवं पितृदोष निवारण हेतु विशेष वैदिक पिंडदान",
     bengaliTagline: "পিতৃদোষ ও অতৃপ্ত পূর্বপুরুষদের মুক্তির জন্য বিশেষ শান্তি পূজা",
     shortDescription: "A specialized, potent Vedic ritual performed to resolve Pitru Dosha and bring eternal peace to unpacified souls.",
     fullDescription: "Tripindi Shradh is an extraordinary ancestral peace ceremony prescribed in the Dharma Shastras. When ancestors across past generations remain unsatisfied due to untimely death, unfulfilled rites, or forgotten annual rituals, it may manifest as Pitru Dosha in family life. Tripindi Shradh involves worshiping Lord Brahma (Satva), Lord Vishnu (Rajas), and Lord Shiva (Tamas) using three sacred pinds (Barley, Rice, and Sesame) to ensure complete liberation across all three realms.",
@@ -218,7 +218,7 @@ export const RITUALS_DATA: Ritual[] = [
     hindiName: "नारायण बलि",
     bengaliName: "নারায়ণ বলি পূজা",
     tagline: "Specific sacred rite performed for the ultimate salvation of souls who faced unnatural or untimely departure",
-    hindiTagline: "अकाल मृत्यु अथवा अतृप्त आत्माओं के मोक्ष एवं तृप्ति हेतु विशेष नारायण बलि अनुष्ठान",
+    hindiTagline: "अकाल मृत्यु अथवा अतृप्त आत्माओं के मोक्ष एवं तृप्ति हेतु विशेष नारायण बलि कर्म",
     bengaliTagline: "অকালমৃত্যু বা বংশবাধার নিবৃত্তির জন্য পরম পবিত্র বৈদিক অনুষ্ঠান",
     shortDescription: "A revered, dedicated ritual to release departed souls from spiritual bondage and bestow ultimate liberation (Moksha).",
     fullDescription: "Narayan Bali is a profound, deeply compassionate Vedic ritual specifically designed for souls who departed prematurely or under challenging circumstances (accidents, sudden ailments, unnatural passing, or incomplete death rites). By invoking Lord Narayana (Vishnu) with the sacred Vishnu Sahasranama and specialized Vedic fire offerings, the soul is freed from ghostly bondage (Preta Yoni) and guided into heavenly tranquility.",

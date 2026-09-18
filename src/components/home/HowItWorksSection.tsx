@@ -10,9 +10,9 @@ export function HowItWorksSection() {
   const steps = [
     {
       number: "01",
-      title: language === "hi" ? "अनुष्ठान चुनें" : "Choose Ritual or Consult",
+      title: language === "hi" ? "पिंडदान चुनें" : "Choose Ritual or Consult",
       desc: language === "hi"
-        ? "पारंपरिक अनुष्ठान चुनें अथवा हमारे तीर्थ पुरोहित से उचित मार्गदर्शन प्राप्त करें।"
+        ? "पारंपरिक पिंडदान चुनें अथवा हमारे तीर्थ पुरोहित से उचित मार्गदर्शन प्राप्त करें।"
         : "Select your sacred ceremony or request direct guidance from our Teerth Pandit.",
     },
     {
@@ -52,7 +52,7 @@ export function HowItWorksSection() {
           </h2>
           <p className="text-xs sm:text-sm text-[#7A6F67] mt-3">
             {language === "hi"
-              ? "अनुष्ठान चुनने से लेकर गया जी में सुफल प्राप्ति तक का सहज मार्गदर्शन।"
+              ? "पिंडदान चुनने से लेकर गया जी में सुफल प्राप्ति तक का सहज मार्गदर्शन।"
               : "From your initial inquiry to receiving eternal Suphal blessings in Gaya Ji."}
           </p>
           <SacredDivider className="my-5" />

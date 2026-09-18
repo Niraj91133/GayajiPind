@@ -42,8 +42,8 @@ export function MeetPanditsSection() {
           <SacredDivider className="my-5" />
         </div>
 
-        {/* Pandits Grid: Horizontal Scroll on Mobile, 3-Col Grid on Desktop */}
-        <div className="flex md:grid md:grid-cols-3 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory gap-4 sm:gap-8 pb-4 sm:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar mb-10 sm:mb-12 text-left">
+        {/* Pandits Grid: Horizontal Scroll on Mobile, 2-Col Centered Grid on Desktop */}
+        <div className="flex md:grid md:grid-cols-2 max-w-4xl mx-auto overflow-x-auto md:overflow-x-visible snap-x snap-mandatory gap-4 sm:gap-8 pb-4 sm:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar mb-10 sm:mb-12 text-left">
           {PANDITS_DATA.map((pandit) => (
             <div
               key={pandit.id}

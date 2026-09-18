@@ -95,9 +95,9 @@ export function GayaJiPindLogo({
   const isDarkBg = variant === "light"; // text needs to be light for dark background
 
   const sizeClasses = {
-    sm: { emblem: "w-8 h-8", title: "text-lg", tag: "text-[9px]" },
-    md: { emblem: "w-11 h-11", title: "text-2xl", tag: "text-[10px]" },
-    lg: { emblem: "w-14 h-14", title: "text-3xl", tag: "text-xs" },
+    sm: { emblem: "w-7 h-7 sm:w-8 sm:h-8", title: "text-sm sm:text-lg", tag: "text-[8px] sm:text-[9px]" },
+    md: { emblem: "w-8 h-8 sm:w-10 sm:h-11", title: "text-base sm:text-xl lg:text-2xl", tag: "text-[8px] sm:text-[10px]" },
+    lg: { emblem: "w-10 h-10 sm:w-14 sm:h-14", title: "text-xl sm:text-3xl", tag: "text-[10px] sm:text-xs" },
   }[size];
 
   return (

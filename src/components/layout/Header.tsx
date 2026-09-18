@@ -97,7 +97,7 @@ export function Header() {
       {/* Main Header */}
       <header className="sticky top-0 z-40 bg-[#FAF8F5]/98 backdrop-blur-md border-b border-[#E8E2D5] transition-all">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-16 sm:h-20">
             
             {/* Authentic Gaya Ji Pind Sewa Logo */}
             <Link href="/" className="inline-block">

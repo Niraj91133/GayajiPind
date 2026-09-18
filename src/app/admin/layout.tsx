@@ -1,28 +1,142 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   LayoutDashboard,
   CalendarCheck,
-  Users,
   Award,
   Hotel,
   Car,
   Globe,
-  Settings,
-  ShieldCheck,
+  Lock,
   LogOut,
   Menu,
   X,
-  Plus
+  KeyRound,
+  ShieldCheck,
+  Eye,
+  EyeOff
 } from "lucide-react";
 import { LotusMotif } from "@/components/common/MotifDividers";
+
+const CORRECT_PASSWORD = "Ratangdas60@";
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
+  const [passwordInput, setPasswordInput] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
+
+  useEffect(() => {
+    const authStatus = localStorage.getItem("gaya_coordinator_auth");
+    if (authStatus === "true") {
+      setIsAuthenticated(true);
+    } else {
+      setIsAuthenticated(false);
+    }
+  }, []);
+
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (passwordInput === CORRECT_PASSWORD) {
+      localStorage.setItem("gaya_coordinator_auth", "true");
+      setIsAuthenticated(true);
+      setErrorMsg("");
+    } else {
+      setErrorMsg("गलत पासवर्ड! कृपया सही कॉर्डिनेटर पासवर्ड दर्ज करें।");
+    }
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem("gaya_coordinator_auth");
+    setIsAuthenticated(false);
+    setPasswordInput("");
+    setErrorMsg("");
+  };
+
+  // Loading state while checking localStorage
+  if (isAuthenticated === null) {
+    return (
+      <div className="min-h-screen bg-[#2A1810] text-[#FAF7F2] flex items-center justify-center p-4">
+        <div className="w-8 h-8 border-2 border-[#DFC07C] border-t-transparent rounded-full animate-spin" />
+      </div>
+    );
+  }
+
+  // Password Protection Screen
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen bg-[#2A1810] text-[#FAF7F2] flex flex-col items-center justify-center p-4">
+        <div className="w-full max-w-md bg-[#3D2418] border border-[#DFC07C]/40 rounded-3xl p-6 sm:p-8 shadow-2xl text-left relative">
+          
+          {/* Top Logo */}
+          <div className="flex flex-col items-center text-center mb-6">
+            <div className="w-14 h-14 rounded-full bg-[#2A1810] border-2 border-[#DFC07C] flex items-center justify-center text-[#DFC07C] mb-3 shadow-md">
+              <LotusMotif className="w-8 h-8" />
+            </div>
+            <h1 className="font-serif text-2xl font-bold text-white">
+              Gaya Ji <span className="text-[#DFC07C]">Coordinator Portal</span>
+            </h1>
+            <p className="text-xs text-[#D2C5B0] mt-1">
+              सुरक्षित कॉर्डिनेटर एक्सेस • पासवर्ड दर्ज करें
+            </p>
+          </div>
+
+          <form onSubmit={handleLogin} className="space-y-4">
+            <div>
+              <label className="block text-xs font-semibold text-[#DFC07C] uppercase tracking-wider mb-2">
+                Coordinator Password
+              </label>
+              <div className="relative">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  value={passwordInput}
+                  onChange={(e) => {
+                    setPasswordInput(e.target.value);
+                    setErrorMsg("");
+                  }}
+                  placeholder="Enter Password..."
+                  className="w-full px-4 py-3 pr-10 rounded-xl bg-[#2A1810] border border-[#DFC07C]/50 text-white placeholder-[#7A6F67] text-sm focus:outline-none focus:border-[#DFC07C] focus:ring-1 focus:ring-[#DFC07C]"
+                  autoFocus
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-[#D2C5B0] hover:text-white"
+                >
+                  {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                </button>
+              </div>
+            </div>
+
+            {errorMsg && (
+              <div className="p-3 rounded-xl bg-red-900/40 border border-red-500/50 text-red-200 text-xs text-center font-medium">
+                {errorMsg}
+              </div>
+            )}
+
+            <button
+              type="submit"
+              className="w-full py-3 px-4 rounded-xl bg-[#DFC07C] hover:bg-[#F7E7B6] text-[#2A1810] font-bold text-sm transition-all shadow-md flex items-center justify-center gap-2"
+            >
+              <KeyRound className="w-4 h-4" />
+              <span>Login to Portal</span>
+            </button>
+          </form>
+
+          <div className="mt-6 pt-4 border-t border-white/10 text-center">
+            <Link href="/" className="text-xs text-[#D2C5B0] hover:text-white underline">
+              ← Return to Main Website
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   const adminNav = [
     { href: "/admin", label: "Dashboard", icon: LayoutDashboard },
@@ -100,16 +214,26 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
         {/* Bottom User Info & Front-end Link */}
         <div className="pt-6 border-t border-[#DFC07C]/20 text-left space-y-3">
-          <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-full bg-[#3D2418] border border-[#DFC07C] flex items-center justify-center text-xs font-bold text-[#DFC07C]">
-              GP
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2.5">
+              <div className="w-8 h-8 rounded-full bg-[#3D2418] border border-[#DFC07C] flex items-center justify-center text-xs font-bold text-[#DFC07C]">
+                GP
+              </div>
+              <div className="flex flex-col">
+                <span className="text-xs font-bold text-white">Gaya Coordinator</span>
+                <span className="text-[10px] text-[#25D366] flex items-center gap-1">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#25D366]" /> Live Portal
+                </span>
+              </div>
             </div>
-            <div className="flex flex-col">
-              <span className="text-xs font-bold text-white">Gaya Coordinator</span>
-              <span className="text-[10px] text-[#25D366] flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#25D366]" /> Live Portal
-              </span>
-            </div>
+
+            <button
+              onClick={handleLogout}
+              className="p-2 rounded-lg bg-red-950/60 hover:bg-red-900 border border-red-800 text-red-300 transition-colors"
+              title="Logout Coordinator"
+            >
+              <LogOut className="w-4 h-4" />
+            </button>
           </div>
 
           <Link
@@ -128,3 +252,4 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     </div>
   );
 }
+
